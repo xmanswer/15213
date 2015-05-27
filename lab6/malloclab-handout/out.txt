@@ -1,0 +1,3381 @@
+Using default tracefiles in ./traces/
+Measuring performance with a cycle counter.
+Processor clock rate ~= 2261.0 MHz
+initialize heap...
+mm_init
+Heap (0x800000030):
+BST root ((nil))
+small list head ((nil)) with size 16
+small list head ((nil)) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: EOL
+extend heap size...
+extend words: [16], extend size: [64]
+coalesce block [0x800000038]...
+mm_malloc
+Heap (0x800000030):
+BST root ((nil))
+small list head ((nil)) with size 16
+small list head ((nil)) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [64:f] footer: [64:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800000078: EOL
+do malloc with size [16]...
+input size is [16], actual size is [24]
+extend heap size...
+extend words: [16], extend size: [64]
+coalesce block [0x800000078]...
+remove node block [0x800000038] from bst list...
+place a block, split if necessary...
+insert node [0x800000050] to bst list...
+mm_malloc
+Heap (0x800000030):
+BST root (0x800000050)
+small list head ((nil)) with size 16
+small list head ((nil)) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:a] footer: [24:a]
+0x800000050: header: [104:f] footer: [104:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x8000000b8: EOL
+do malloc with size [1234]...
+input size is [1234], actual size is [1240]
+extend heap size...
+extend words: [310], extend size: [1240]
+coalesce block [0x8000000b8]...
+remove node block [0x800000050] from bst list...
+place a block, split if necessary...
+insert node [0x800000528] to bst list...
+mm_malloc
+Heap (0x800000030):
+BST root (0x800000528)
+small list head ((nil)) with size 16
+small list head ((nil)) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:a] footer: [24:a]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [104:f] footer: [104:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800000590: EOL
+do malloc with size [1234]...
+input size is [1234], actual size is [1240]
+extend heap size...
+extend words: [310], extend size: [1240]
+coalesce block [0x800000590]...
+remove node block [0x800000528] from bst list...
+place a block, split if necessary...
+insert node [0x800000a00] to bst list...
+mm_malloc
+Heap (0x800000030):
+BST root (0x800000a00)
+small list head ((nil)) with size 16
+small list head ((nil)) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:a] footer: [24:a]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:a] footer: [60032:f]
+0x800000a00: header: [104:f] footer: [104:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800000a68: EOL
+do malloc with size [1234]...
+input size is [1234], actual size is [1240]
+extend heap size...
+extend words: [310], extend size: [1240]
+coalesce block [0x800000a68]...
+remove node block [0x800000a00] from bst list...
+place a block, split if necessary...
+insert node [0x800000ed8] to bst list...
+mm_malloc
+Heap (0x800000030):
+BST root (0x800000ed8)
+small list head ((nil)) with size 16
+small list head ((nil)) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:a] footer: [24:a]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:a] footer: [60032:f]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [104:f] footer: [104:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800000f40: EOL
+do malloc with size [1234]...
+input size is [1234], actual size is [1240]
+extend heap size...
+extend words: [310], extend size: [1240]
+coalesce block [0x800000f40]...
+remove node block [0x800000ed8] from bst list...
+place a block, split if necessary...
+insert node [0x8000013b0] to bst list...
+mm_malloc
+Heap (0x800000030):
+BST root (0x8000013b0)
+small list head ((nil)) with size 16
+small list head ((nil)) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:a] footer: [24:a]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:a] footer: [60032:f]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [45904:a]
+0x8000013b0: header: [104:f] footer: [104:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800001418: EOL
+do malloc with size [1234]...
+input size is [1234], actual size is [1240]
+extend heap size...
+extend words: [310], extend size: [1240]
+coalesce block [0x800001418]...
+remove node block [0x8000013b0] from bst list...
+place a block, split if necessary...
+insert node [0x800001888] to bst list...
+mm_malloc
+Heap (0x800000030):
+BST root (0x800001888)
+small list head ((nil)) with size 16
+small list head ((nil)) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:a] footer: [24:a]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:a] footer: [60032:f]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [45904:a]
+0x8000013b0: header: [1240:a] footer: [59656:a]
+0x800001888: header: [104:f] footer: [104:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x8000018f0: EOL
+do malloc with size [1234]...
+input size is [1234], actual size is [1240]
+extend heap size...
+extend words: [310], extend size: [1240]
+coalesce block [0x8000018f0]...
+remove node block [0x800001888] from bst list...
+place a block, split if necessary...
+insert node [0x800001d60] to bst list...
+mm_malloc
+Heap (0x800000030):
+BST root (0x800001d60)
+small list head ((nil)) with size 16
+small list head ((nil)) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:a] footer: [24:a]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:a] footer: [60032:f]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [45904:a]
+0x8000013b0: header: [1240:a] footer: [59656:a]
+0x800001888: header: [1240:a] footer: [2344:a]
+0x800001d60: header: [104:f] footer: [104:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800001dc8: EOL
+do malloc with size [1234]...
+input size is [1234], actual size is [1240]
+extend heap size...
+extend words: [310], extend size: [1240]
+coalesce block [0x800001dc8]...
+remove node block [0x800001d60] from bst list...
+place a block, split if necessary...
+insert node [0x800002238] to bst list...
+mm_malloc
+Heap (0x800000030):
+BST root (0x800002238)
+small list head ((nil)) with size 16
+small list head ((nil)) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:a] footer: [24:a]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:a] footer: [60032:f]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [45904:a]
+0x8000013b0: header: [1240:a] footer: [59656:a]
+0x800001888: header: [1240:a] footer: [2344:a]
+0x800001d60: header: [1240:a] footer: [31432:a]
+0x800002238: header: [104:f] footer: [104:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x8000022a0: EOL
+do malloc with size [1234]...
+input size is [1234], actual size is [1240]
+extend heap size...
+extend words: [310], extend size: [1240]
+coalesce block [0x8000022a0]...
+remove node block [0x800002238] from bst list...
+place a block, split if necessary...
+insert node [0x800002710] to bst list...
+mm_free
+Heap (0x800000030):
+BST root (0x800002710)
+small list head ((nil)) with size 16
+small list head ((nil)) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:a] footer: [24:a]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:a] footer: [60032:f]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [45904:a]
+0x8000013b0: header: [1240:a] footer: [59656:a]
+0x800001888: header: [1240:a] footer: [2344:a]
+0x800001d60: header: [1240:a] footer: [31432:a]
+0x800002238: header: [1240:a] footer: [15904:f]
+0x800002710: header: [104:f] footer: [104:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800002778: EOL
+free block [0x800000038]:
+coalesce block [0x800000038]...
+insert node [0x800000038] with size 24 to small list...
+index is 2...
+now head pointer is [(nil)]
+mm_malloc
+Heap (0x800000030):
+BST root (0x800002710)
+small list head ((nil)) with size 16
+small list head (0x800000038) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:f] footer: [24:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:a] footer: [60032:f]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [45904:a]
+0x8000013b0: header: [1240:a] footer: [59656:a]
+0x800001888: header: [1240:a] footer: [2344:a]
+0x800001d60: header: [1240:a] footer: [31432:a]
+0x800002238: header: [1240:a] footer: [15904:f]
+0x800002710: header: [104:f] footer: [104:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800002778: EOL
+do malloc with size [1234]...
+input size is [1234], actual size is [1240]
+extend heap size...
+extend words: [310], extend size: [1240]
+coalesce block [0x800002778]...
+remove node block [0x800002710] from bst list...
+place a block, split if necessary...
+insert node [0x800002be8] to bst list...
+mm_malloc
+Heap (0x800000030):
+BST root (0x800002be8)
+small list head ((nil)) with size 16
+small list head (0x800000038) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:f] footer: [24:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:a] footer: [60032:f]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [45904:a]
+0x8000013b0: header: [1240:a] footer: [59656:a]
+0x800001888: header: [1240:a] footer: [2344:a]
+0x800001d60: header: [1240:a] footer: [31432:a]
+0x800002238: header: [1240:a] footer: [15904:f]
+0x800002710: header: [1240:a] footer: [18928:f]
+0x800002be8: header: [104:f] footer: [104:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800002c50: EOL
+do malloc with size [1234]...
+input size is [1234], actual size is [1240]
+extend heap size...
+extend words: [310], extend size: [1240]
+coalesce block [0x800002c50]...
+remove node block [0x800002be8] from bst list...
+place a block, split if necessary...
+insert node [0x8000030c0] to bst list...
+mm_malloc
+Heap (0x800000030):
+BST root (0x8000030c0)
+small list head ((nil)) with size 16
+small list head (0x800000038) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:f] footer: [24:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:a] footer: [60032:f]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [45904:a]
+0x8000013b0: header: [1240:a] footer: [59656:a]
+0x800001888: header: [1240:a] footer: [2344:a]
+0x800001d60: header: [1240:a] footer: [31432:a]
+0x800002238: header: [1240:a] footer: [15904:f]
+0x800002710: header: [1240:a] footer: [18928:f]
+0x800002be8: header: [1240:a] footer: [37424:f]
+0x8000030c0: header: [104:f] footer: [104:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800003128: EOL
+do malloc with size [1234]...
+input size is [1234], actual size is [1240]
+extend heap size...
+extend words: [310], extend size: [1240]
+coalesce block [0x800003128]...
+remove node block [0x8000030c0] from bst list...
+place a block, split if necessary...
+insert node [0x800003598] to bst list...
+mm_malloc
+Heap (0x800000030):
+BST root (0x800003598)
+small list head ((nil)) with size 16
+small list head (0x800000038) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:f] footer: [24:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:a] footer: [60032:f]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [45904:a]
+0x8000013b0: header: [1240:a] footer: [59656:a]
+0x800001888: header: [1240:a] footer: [2344:a]
+0x800001d60: header: [1240:a] footer: [31432:a]
+0x800002238: header: [1240:a] footer: [15904:f]
+0x800002710: header: [1240:a] footer: [18928:f]
+0x800002be8: header: [1240:a] footer: [37424:f]
+0x8000030c0: header: [1240:a] footer: [6096:f]
+0x800003598: header: [104:f] footer: [104:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800003600: EOL
+do malloc with size [1234]...
+input size is [1234], actual size is [1240]
+extend heap size...
+extend words: [310], extend size: [1240]
+coalesce block [0x800003600]...
+remove node block [0x800003598] from bst list...
+place a block, split if necessary...
+insert node [0x800003a70] to bst list...
+mm_malloc
+Heap (0x800000030):
+BST root (0x800003a70)
+small list head ((nil)) with size 16
+small list head (0x800000038) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:f] footer: [24:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:a] footer: [60032:f]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [45904:a]
+0x8000013b0: header: [1240:a] footer: [59656:a]
+0x800001888: header: [1240:a] footer: [2344:a]
+0x800001d60: header: [1240:a] footer: [31432:a]
+0x800002238: header: [1240:a] footer: [15904:f]
+0x800002710: header: [1240:a] footer: [18928:f]
+0x800002be8: header: [1240:a] footer: [37424:f]
+0x8000030c0: header: [1240:a] footer: [6096:f]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [104:f] footer: [104:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800003ad8: EOL
+do malloc with size [600]...
+input size is [600], actual size is [608]
+extend heap size...
+extend words: [152], extend size: [608]
+coalesce block [0x800003ad8]...
+remove node block [0x800003a70] from bst list...
+place a block, split if necessary...
+insert node [0x800003cd0] to bst list...
+mm_malloc
+Heap (0x800000030):
+BST root (0x800003cd0)
+small list head ((nil)) with size 16
+small list head (0x800000038) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:f] footer: [24:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:a] footer: [60032:f]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [45904:a]
+0x8000013b0: header: [1240:a] footer: [59656:a]
+0x800001888: header: [1240:a] footer: [2344:a]
+0x800001d60: header: [1240:a] footer: [31432:a]
+0x800002238: header: [1240:a] footer: [15904:f]
+0x800002710: header: [1240:a] footer: [18928:f]
+0x800002be8: header: [1240:a] footer: [37424:f]
+0x8000030c0: header: [1240:a] footer: [6096:f]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [608:a] footer: [608:a]
+0x800003cd0: header: [104:f] footer: [104:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800003d38: EOL
+do malloc with size [600]...
+input size is [600], actual size is [608]
+extend heap size...
+extend words: [152], extend size: [608]
+coalesce block [0x800003d38]...
+remove node block [0x800003cd0] from bst list...
+place a block, split if necessary...
+insert node [0x800003f30] to bst list...
+mm_malloc
+Heap (0x800000030):
+BST root (0x800003f30)
+small list head ((nil)) with size 16
+small list head (0x800000038) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:f] footer: [24:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:a] footer: [60032:f]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [45904:a]
+0x8000013b0: header: [1240:a] footer: [59656:a]
+0x800001888: header: [1240:a] footer: [2344:a]
+0x800001d60: header: [1240:a] footer: [31432:a]
+0x800002238: header: [1240:a] footer: [15904:f]
+0x800002710: header: [1240:a] footer: [18928:f]
+0x800002be8: header: [1240:a] footer: [37424:f]
+0x8000030c0: header: [1240:a] footer: [6096:f]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [608:a] footer: [608:a]
+0x800003cd0: header: [608:a] footer: [608:a]
+0x800003f30: header: [104:f] footer: [104:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800003f98: EOL
+do malloc with size [600]...
+input size is [600], actual size is [608]
+extend heap size...
+extend words: [152], extend size: [608]
+coalesce block [0x800003f98]...
+remove node block [0x800003f30] from bst list...
+place a block, split if necessary...
+insert node [0x800004190] to bst list...
+mm_malloc
+Heap (0x800000030):
+BST root (0x800004190)
+small list head ((nil)) with size 16
+small list head (0x800000038) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:f] footer: [24:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:a] footer: [60032:f]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [45904:a]
+0x8000013b0: header: [1240:a] footer: [59656:a]
+0x800001888: header: [1240:a] footer: [2344:a]
+0x800001d60: header: [1240:a] footer: [31432:a]
+0x800002238: header: [1240:a] footer: [15904:f]
+0x800002710: header: [1240:a] footer: [18928:f]
+0x800002be8: header: [1240:a] footer: [37424:f]
+0x8000030c0: header: [1240:a] footer: [6096:f]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [608:a] footer: [608:a]
+0x800003cd0: header: [608:a] footer: [608:a]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [104:f] footer: [104:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x8000041f8: EOL
+do malloc with size [600]...
+input size is [600], actual size is [608]
+extend heap size...
+extend words: [152], extend size: [608]
+coalesce block [0x8000041f8]...
+remove node block [0x800004190] from bst list...
+place a block, split if necessary...
+insert node [0x8000043f0] to bst list...
+mm_malloc
+Heap (0x800000030):
+BST root (0x8000043f0)
+small list head ((nil)) with size 16
+small list head (0x800000038) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:f] footer: [24:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:a] footer: [60032:f]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [45904:a]
+0x8000013b0: header: [1240:a] footer: [59656:a]
+0x800001888: header: [1240:a] footer: [2344:a]
+0x800001d60: header: [1240:a] footer: [31432:a]
+0x800002238: header: [1240:a] footer: [15904:f]
+0x800002710: header: [1240:a] footer: [18928:f]
+0x800002be8: header: [1240:a] footer: [37424:f]
+0x8000030c0: header: [1240:a] footer: [6096:f]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [608:a] footer: [608:a]
+0x800003cd0: header: [608:a] footer: [608:a]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [104:f] footer: [104:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800004458: EOL
+do malloc with size [16]...
+input size is [16], actual size is [24]
+place a block, split if necessary...
+mm_malloc
+Heap (0x800000030):
+BST root (0x8000043f0)
+small list head ((nil)) with size 16
+small list head ((nil)) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:a] footer: [24:a]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:a] footer: [60032:f]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [45904:a]
+0x8000013b0: header: [1240:a] footer: [59656:a]
+0x800001888: header: [1240:a] footer: [2344:a]
+0x800001d60: header: [1240:a] footer: [31432:a]
+0x800002238: header: [1240:a] footer: [15904:f]
+0x800002710: header: [1240:a] footer: [18928:f]
+0x800002be8: header: [1240:a] footer: [37424:f]
+0x8000030c0: header: [1240:a] footer: [6096:f]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [608:a] footer: [608:a]
+0x800003cd0: header: [608:a] footer: [608:a]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [104:f] footer: [104:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800004458: EOL
+do malloc with size [16]...
+input size is [16], actual size is [24]
+extend heap size...
+extend words: [16], extend size: [64]
+coalesce block [0x800004458]...
+remove node block [0x8000043f0] from bst list...
+place a block, split if necessary...
+insert node [0x800004408] to bst list...
+mm_malloc
+Heap (0x800000030):
+BST root (0x800004408)
+small list head ((nil)) with size 16
+small list head ((nil)) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:a] footer: [24:a]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:a] footer: [60032:f]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [45904:a]
+0x8000013b0: header: [1240:a] footer: [59656:a]
+0x800001888: header: [1240:a] footer: [2344:a]
+0x800001d60: header: [1240:a] footer: [31432:a]
+0x800002238: header: [1240:a] footer: [15904:f]
+0x800002710: header: [1240:a] footer: [18928:f]
+0x800002be8: header: [1240:a] footer: [37424:f]
+0x8000030c0: header: [1240:a] footer: [6096:f]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [608:a] footer: [608:a]
+0x800003cd0: header: [608:a] footer: [608:a]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [24:a] footer: [24:a]
+0x800004408: header: [144:f] footer: [144:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800004498: EOL
+do malloc with size [16]...
+input size is [16], actual size is [24]
+extend heap size...
+extend words: [16], extend size: [64]
+coalesce block [0x800004498]...
+remove node block [0x800004408] from bst list...
+place a block, split if necessary...
+insert node [0x800004420] to bst list...
+mm_free
+Heap (0x800000030):
+BST root (0x800004420)
+small list head ((nil)) with size 16
+small list head ((nil)) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:a] footer: [24:a]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:a] footer: [60032:f]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [45904:a]
+0x8000013b0: header: [1240:a] footer: [59656:a]
+0x800001888: header: [1240:a] footer: [2344:a]
+0x800001d60: header: [1240:a] footer: [31432:a]
+0x800002238: header: [1240:a] footer: [15904:f]
+0x800002710: header: [1240:a] footer: [18928:f]
+0x800002be8: header: [1240:a] footer: [37424:f]
+0x8000030c0: header: [1240:a] footer: [6096:f]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [608:a] footer: [608:a]
+0x800003cd0: header: [608:a] footer: [608:a]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [24:a] footer: [24:a]
+0x800004408: header: [24:a] footer: [24:a]
+0x800004420: header: [184:f] footer: [184:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x8000044d8: EOL
+free block [0x800002238]:
+coalesce block [0x800002238]...
+insert node [0x800002238] to bst list...
+mm_malloc
+Heap (0x800000030):
+BST root (0x800004420)
+small list head ((nil)) with size 16
+small list head ((nil)) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:a] footer: [24:a]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:a] footer: [60032:f]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [45904:a]
+0x8000013b0: header: [1240:a] footer: [59656:a]
+0x800001888: header: [1240:a] footer: [2344:a]
+0x800001d60: header: [1240:a] footer: [31432:a]
+0x800002238: header: [1240:f] footer: [1240:f]
+BST:PREV[0x4420] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800002710: header: [1240:a] footer: [18928:f]
+0x800002be8: header: [1240:a] footer: [37424:f]
+0x8000030c0: header: [1240:a] footer: [6096:f]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [608:a] footer: [608:a]
+0x800003cd0: header: [608:a] footer: [608:a]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [24:a] footer: [24:a]
+0x800004408: header: [24:a] footer: [24:a]
+0x800004420: header: [184:f] footer: [184:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x0] RIGHT[0x2238]
+0x8000044d8: EOL
+do malloc with size [1234]...
+input size is [1234], actual size is [1240]
+remove node block [0x800002238] from bst list...
+place a block, split if necessary...
+mm_malloc
+Heap (0x800000030):
+BST root (0x800004420)
+small list head ((nil)) with size 16
+small list head ((nil)) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:a] footer: [24:a]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:a] footer: [60032:f]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [45904:a]
+0x8000013b0: header: [1240:a] footer: [59656:a]
+0x800001888: header: [1240:a] footer: [2344:a]
+0x800001d60: header: [1240:a] footer: [31432:a]
+0x800002238: header: [1240:a] footer: [32960:a]
+0x800002710: header: [1240:a] footer: [18928:f]
+0x800002be8: header: [1240:a] footer: [37424:f]
+0x8000030c0: header: [1240:a] footer: [6096:f]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [608:a] footer: [608:a]
+0x800003cd0: header: [608:a] footer: [608:a]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [24:a] footer: [24:a]
+0x800004408: header: [24:a] footer: [24:a]
+0x800004420: header: [184:f] footer: [184:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x8000044d8: EOL
+do malloc with size [16]...
+input size is [16], actual size is [24]
+extend heap size...
+extend words: [16], extend size: [64]
+coalesce block [0x8000044d8]...
+remove node block [0x800004420] from bst list...
+place a block, split if necessary...
+insert node [0x800004438] to bst list...
+mm_malloc
+Heap (0x800000030):
+BST root (0x800004438)
+small list head ((nil)) with size 16
+small list head ((nil)) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:a] footer: [24:a]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:a] footer: [60032:f]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [45904:a]
+0x8000013b0: header: [1240:a] footer: [59656:a]
+0x800001888: header: [1240:a] footer: [2344:a]
+0x800001d60: header: [1240:a] footer: [31432:a]
+0x800002238: header: [1240:a] footer: [32960:a]
+0x800002710: header: [1240:a] footer: [18928:f]
+0x800002be8: header: [1240:a] footer: [37424:f]
+0x8000030c0: header: [1240:a] footer: [6096:f]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [608:a] footer: [608:a]
+0x800003cd0: header: [608:a] footer: [608:a]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [24:a] footer: [24:a]
+0x800004408: header: [24:a] footer: [24:a]
+0x800004420: header: [24:a] footer: [24:a]
+0x800004438: header: [224:f] footer: [224:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800004518: EOL
+do malloc with size [16]...
+input size is [16], actual size is [24]
+extend heap size...
+extend words: [16], extend size: [64]
+coalesce block [0x800004518]...
+remove node block [0x800004438] from bst list...
+place a block, split if necessary...
+insert node [0x800004450] to bst list...
+mm_malloc
+Heap (0x800000030):
+BST root (0x800004450)
+small list head ((nil)) with size 16
+small list head ((nil)) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:a] footer: [24:a]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:a] footer: [60032:f]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [45904:a]
+0x8000013b0: header: [1240:a] footer: [59656:a]
+0x800001888: header: [1240:a] footer: [2344:a]
+0x800001d60: header: [1240:a] footer: [31432:a]
+0x800002238: header: [1240:a] footer: [32960:a]
+0x800002710: header: [1240:a] footer: [18928:f]
+0x800002be8: header: [1240:a] footer: [37424:f]
+0x8000030c0: header: [1240:a] footer: [6096:f]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [608:a] footer: [608:a]
+0x800003cd0: header: [608:a] footer: [608:a]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [24:a] footer: [24:a]
+0x800004408: header: [24:a] footer: [24:a]
+0x800004420: header: [24:a] footer: [24:a]
+0x800004438: header: [24:a] footer: [24:a]
+0x800004450: header: [264:f] footer: [264:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800004558: EOL
+do malloc with size [16]...
+input size is [16], actual size is [24]
+extend heap size...
+extend words: [16], extend size: [64]
+coalesce block [0x800004558]...
+remove node block [0x800004450] from bst list...
+place a block, split if necessary...
+insert node [0x800004468] to bst list...
+mm_malloc
+Heap (0x800000030):
+BST root (0x800004468)
+small list head ((nil)) with size 16
+small list head ((nil)) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:a] footer: [24:a]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:a] footer: [60032:f]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [45904:a]
+0x8000013b0: header: [1240:a] footer: [59656:a]
+0x800001888: header: [1240:a] footer: [2344:a]
+0x800001d60: header: [1240:a] footer: [31432:a]
+0x800002238: header: [1240:a] footer: [32960:a]
+0x800002710: header: [1240:a] footer: [18928:f]
+0x800002be8: header: [1240:a] footer: [37424:f]
+0x8000030c0: header: [1240:a] footer: [6096:f]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [608:a] footer: [608:a]
+0x800003cd0: header: [608:a] footer: [608:a]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [24:a] footer: [24:a]
+0x800004408: header: [24:a] footer: [24:a]
+0x800004420: header: [24:a] footer: [24:a]
+0x800004438: header: [24:a] footer: [24:a]
+0x800004450: header: [24:a] footer: [24:a]
+0x800004468: header: [304:f] footer: [304:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800004598: EOL
+do malloc with size [1234]...
+input size is [1234], actual size is [1240]
+extend heap size...
+extend words: [310], extend size: [1240]
+coalesce block [0x800004598]...
+remove node block [0x800004468] from bst list...
+place a block, split if necessary...
+insert node [0x800004940] to bst list...
+mm_free
+Heap (0x800000030):
+BST root (0x800004940)
+small list head ((nil)) with size 16
+small list head ((nil)) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:a] footer: [24:a]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:a] footer: [60032:f]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [45904:a]
+0x8000013b0: header: [1240:a] footer: [59656:a]
+0x800001888: header: [1240:a] footer: [2344:a]
+0x800001d60: header: [1240:a] footer: [31432:a]
+0x800002238: header: [1240:a] footer: [32960:a]
+0x800002710: header: [1240:a] footer: [18928:f]
+0x800002be8: header: [1240:a] footer: [37424:f]
+0x8000030c0: header: [1240:a] footer: [6096:f]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [608:a] footer: [608:a]
+0x800003cd0: header: [608:a] footer: [608:a]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [24:a] footer: [24:a]
+0x800004408: header: [24:a] footer: [24:a]
+0x800004420: header: [24:a] footer: [24:a]
+0x800004438: header: [24:a] footer: [24:a]
+0x800004450: header: [24:a] footer: [24:a]
+0x800004468: header: [1240:a] footer: [57280:f]
+0x800004940: header: [304:f] footer: [304:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800004a70: EOL
+free block [0x800004420]:
+coalesce block [0x800004420]...
+insert node [0x800004420] with size 24 to small list...
+index is 2...
+now head pointer is [(nil)]
+mm_malloc
+Heap (0x800000030):
+BST root (0x800004940)
+small list head ((nil)) with size 16
+small list head (0x800004420) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:a] footer: [24:a]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:a] footer: [60032:f]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [45904:a]
+0x8000013b0: header: [1240:a] footer: [59656:a]
+0x800001888: header: [1240:a] footer: [2344:a]
+0x800001d60: header: [1240:a] footer: [31432:a]
+0x800002238: header: [1240:a] footer: [32960:a]
+0x800002710: header: [1240:a] footer: [18928:f]
+0x800002be8: header: [1240:a] footer: [37424:f]
+0x8000030c0: header: [1240:a] footer: [6096:f]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [608:a] footer: [608:a]
+0x800003cd0: header: [608:a] footer: [608:a]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [24:a] footer: [24:a]
+0x800004408: header: [24:a] footer: [24:a]
+0x800004420: header: [24:f] footer: [24:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800004438: header: [24:a] footer: [24:a]
+0x800004450: header: [24:a] footer: [24:a]
+0x800004468: header: [1240:a] footer: [57280:f]
+0x800004940: header: [304:f] footer: [304:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800004a70: EOL
+do malloc with size [600]...
+input size is [600], actual size is [608]
+extend heap size...
+extend words: [152], extend size: [608]
+coalesce block [0x800004a70]...
+remove node block [0x800004940] from bst list...
+place a block, split if necessary...
+insert node [0x800004ba0] to bst list...
+mm_free
+Heap (0x800000030):
+BST root (0x800004ba0)
+small list head ((nil)) with size 16
+small list head (0x800004420) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:a] footer: [24:a]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:a] footer: [60032:f]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [45904:a]
+0x8000013b0: header: [1240:a] footer: [59656:a]
+0x800001888: header: [1240:a] footer: [2344:a]
+0x800001d60: header: [1240:a] footer: [31432:a]
+0x800002238: header: [1240:a] footer: [32960:a]
+0x800002710: header: [1240:a] footer: [18928:f]
+0x800002be8: header: [1240:a] footer: [37424:f]
+0x8000030c0: header: [1240:a] footer: [6096:f]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [608:a] footer: [608:a]
+0x800003cd0: header: [608:a] footer: [608:a]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [24:a] footer: [24:a]
+0x800004408: header: [24:a] footer: [24:a]
+0x800004420: header: [24:f] footer: [24:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800004438: header: [24:a] footer: [24:a]
+0x800004450: header: [24:a] footer: [24:a]
+0x800004468: header: [1240:a] footer: [57280:f]
+0x800004940: header: [608:a] footer: [608:a]
+0x800004ba0: header: [304:f] footer: [304:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800004cd0: EOL
+free block [0x8000013b0]:
+coalesce block [0x8000013b0]...
+insert node [0x8000013b0] to bst list...
+mm_free
+Heap (0x800000030):
+BST root (0x800004ba0)
+small list head ((nil)) with size 16
+small list head (0x800004420) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:a] footer: [24:a]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:a] footer: [60032:f]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [45904:a]
+0x8000013b0: header: [1240:f] footer: [1240:f]
+BST:PREV[0x4ba0] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800001888: header: [1240:a] footer: [2344:a]
+0x800001d60: header: [1240:a] footer: [31432:a]
+0x800002238: header: [1240:a] footer: [32960:a]
+0x800002710: header: [1240:a] footer: [18928:f]
+0x800002be8: header: [1240:a] footer: [37424:f]
+0x8000030c0: header: [1240:a] footer: [6096:f]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [608:a] footer: [608:a]
+0x800003cd0: header: [608:a] footer: [608:a]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [24:a] footer: [24:a]
+0x800004408: header: [24:a] footer: [24:a]
+0x800004420: header: [24:f] footer: [24:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800004438: header: [24:a] footer: [24:a]
+0x800004450: header: [24:a] footer: [24:a]
+0x800004468: header: [1240:a] footer: [57280:f]
+0x800004940: header: [608:a] footer: [608:a]
+0x800004ba0: header: [304:f] footer: [304:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x0] RIGHT[0x13b0]
+0x800004cd0: EOL
+free block [0x800003cd0]:
+coalesce block [0x800003cd0]...
+insert node [0x800003cd0] to bst list...
+mm_free
+Heap (0x800000030):
+BST root (0x800004ba0)
+small list head ((nil)) with size 16
+small list head (0x800004420) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:a] footer: [24:a]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:a] footer: [60032:f]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [45904:a]
+0x8000013b0: header: [1240:f] footer: [1240:f]
+BST:PREV[0x4ba0] NEXT[0x0] LEFT[0x3cd0] RIGHT[0x0]
+0x800001888: header: [1240:a] footer: [2344:a]
+0x800001d60: header: [1240:a] footer: [31432:a]
+0x800002238: header: [1240:a] footer: [32960:a]
+0x800002710: header: [1240:a] footer: [18928:f]
+0x800002be8: header: [1240:a] footer: [37424:f]
+0x8000030c0: header: [1240:a] footer: [6096:f]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [608:a] footer: [608:a]
+0x800003cd0: header: [608:f] footer: [608:f]
+BST:PREV[0x13b0] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [24:a] footer: [24:a]
+0x800004408: header: [24:a] footer: [24:a]
+0x800004420: header: [24:f] footer: [24:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800004438: header: [24:a] footer: [24:a]
+0x800004450: header: [24:a] footer: [24:a]
+0x800004468: header: [1240:a] footer: [57280:f]
+0x800004940: header: [608:a] footer: [608:a]
+0x800004ba0: header: [304:f] footer: [304:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x0] RIGHT[0x13b0]
+0x800004cd0: EOL
+free block [0x800001d60]:
+coalesce block [0x800001d60]...
+insert node [0x800001d60] to bst list...
+mm_malloc
+Heap (0x800000030):
+BST root (0x800004ba0)
+small list head ((nil)) with size 16
+small list head (0x800004420) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:a] footer: [24:a]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:a] footer: [60032:f]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [45904:a]
+0x8000013b0: header: [1240:f] footer: [1240:f]
+BST:PREV[0x1d60] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800001888: header: [1240:a] footer: [2344:a]
+0x800001d60: header: [1240:f] footer: [1240:f]
+BST:PREV[0x4ba0] NEXT[0x13b0] LEFT[0x3cd0] RIGHT[0x0]
+0x800002238: header: [1240:a] footer: [32960:a]
+0x800002710: header: [1240:a] footer: [18928:f]
+0x800002be8: header: [1240:a] footer: [37424:f]
+0x8000030c0: header: [1240:a] footer: [6096:f]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [608:a] footer: [608:a]
+0x800003cd0: header: [608:f] footer: [608:f]
+BST:PREV[0x1d60] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [24:a] footer: [24:a]
+0x800004408: header: [24:a] footer: [24:a]
+0x800004420: header: [24:f] footer: [24:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800004438: header: [24:a] footer: [24:a]
+0x800004450: header: [24:a] footer: [24:a]
+0x800004468: header: [1240:a] footer: [57280:f]
+0x800004940: header: [608:a] footer: [608:a]
+0x800004ba0: header: [304:f] footer: [304:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x0] RIGHT[0x1d60]
+0x800004cd0: EOL
+do malloc with size [1234]...
+input size is [1234], actual size is [1240]
+remove node block [0x800001d60] from bst list...
+place a block, split if necessary...
+mm_malloc
+Heap (0x800000030):
+BST root (0x800004ba0)
+small list head ((nil)) with size 16
+small list head (0x800004420) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:a] footer: [24:a]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:a] footer: [60032:f]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [45904:a]
+0x8000013b0: header: [1240:f] footer: [1240:f]
+BST:PREV[0x4ba0] NEXT[0x0] LEFT[0x3cd0] RIGHT[0x0]
+0x800001888: header: [1240:a] footer: [2344:a]
+0x800001d60: header: [1240:a] footer: [45144:f]
+0x800002238: header: [1240:a] footer: [32960:a]
+0x800002710: header: [1240:a] footer: [18928:f]
+0x800002be8: header: [1240:a] footer: [37424:f]
+0x8000030c0: header: [1240:a] footer: [6096:f]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [608:a] footer: [608:a]
+0x800003cd0: header: [608:f] footer: [608:f]
+BST:PREV[0x13b0] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [24:a] footer: [24:a]
+0x800004408: header: [24:a] footer: [24:a]
+0x800004420: header: [24:f] footer: [24:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800004438: header: [24:a] footer: [24:a]
+0x800004450: header: [24:a] footer: [24:a]
+0x800004468: header: [1240:a] footer: [57280:f]
+0x800004940: header: [608:a] footer: [608:a]
+0x800004ba0: header: [304:f] footer: [304:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x0] RIGHT[0x13b0]
+0x800004cd0: EOL
+do malloc with size [1234]...
+input size is [1234], actual size is [1240]
+remove node block [0x8000013b0] from bst list...
+place a block, split if necessary...
+mm_malloc
+Heap (0x800000030):
+BST root (0x800004ba0)
+small list head ((nil)) with size 16
+small list head (0x800004420) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:a] footer: [24:a]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:a] footer: [60032:f]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [45904:a]
+0x8000013b0: header: [1240:a] footer: [20488:a]
+0x800001888: header: [1240:a] footer: [2344:a]
+0x800001d60: header: [1240:a] footer: [45144:f]
+0x800002238: header: [1240:a] footer: [32960:a]
+0x800002710: header: [1240:a] footer: [18928:f]
+0x800002be8: header: [1240:a] footer: [37424:f]
+0x8000030c0: header: [1240:a] footer: [6096:f]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [608:a] footer: [608:a]
+0x800003cd0: header: [608:f] footer: [608:f]
+BST:PREV[0x4ba0] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [24:a] footer: [24:a]
+0x800004408: header: [24:a] footer: [24:a]
+0x800004420: header: [24:f] footer: [24:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800004438: header: [24:a] footer: [24:a]
+0x800004450: header: [24:a] footer: [24:a]
+0x800004468: header: [1240:a] footer: [57280:f]
+0x800004940: header: [608:a] footer: [608:a]
+0x800004ba0: header: [304:f] footer: [304:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x0] RIGHT[0x3cd0]
+0x800004cd0: EOL
+do malloc with size [1234]...
+input size is [1234], actual size is [1240]
+extend heap size...
+extend words: [310], extend size: [1240]
+coalesce block [0x800004cd0]...
+remove node block [0x800004ba0] from bst list...
+place a block, split if necessary...
+insert node [0x800005078] to bst list...
+mm_malloc
+Heap (0x800000030):
+BST root (0x800003cd0)
+small list head ((nil)) with size 16
+small list head (0x800004420) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:a] footer: [24:a]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:a] footer: [60032:f]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [45904:a]
+0x8000013b0: header: [1240:a] footer: [20488:a]
+0x800001888: header: [1240:a] footer: [2344:a]
+0x800001d60: header: [1240:a] footer: [45144:f]
+0x800002238: header: [1240:a] footer: [32960:a]
+0x800002710: header: [1240:a] footer: [18928:f]
+0x800002be8: header: [1240:a] footer: [37424:f]
+0x8000030c0: header: [1240:a] footer: [6096:f]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [608:a] footer: [608:a]
+0x800003cd0: header: [608:f] footer: [608:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x5078] RIGHT[0x0]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [24:a] footer: [24:a]
+0x800004408: header: [24:a] footer: [24:a]
+0x800004420: header: [24:f] footer: [24:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800004438: header: [24:a] footer: [24:a]
+0x800004450: header: [24:a] footer: [24:a]
+0x800004468: header: [1240:a] footer: [57280:f]
+0x800004940: header: [608:a] footer: [608:a]
+0x800004ba0: header: [1240:a] footer: [44904:f]
+0x800005078: header: [304:f] footer: [304:f]
+BST:PREV[0x3cd0] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x8000051a8: EOL
+do malloc with size [1234]...
+input size is [1234], actual size is [1240]
+extend heap size...
+extend words: [310], extend size: [1240]
+coalesce block [0x8000051a8]...
+remove node block [0x800005078] from bst list...
+place a block, split if necessary...
+insert node [0x800005550] to bst list...
+mm_malloc
+Heap (0x800000030):
+BST root (0x800003cd0)
+small list head ((nil)) with size 16
+small list head (0x800004420) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:a] footer: [24:a]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:a] footer: [60032:f]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [45904:a]
+0x8000013b0: header: [1240:a] footer: [20488:a]
+0x800001888: header: [1240:a] footer: [2344:a]
+0x800001d60: header: [1240:a] footer: [45144:f]
+0x800002238: header: [1240:a] footer: [32960:a]
+0x800002710: header: [1240:a] footer: [18928:f]
+0x800002be8: header: [1240:a] footer: [37424:f]
+0x8000030c0: header: [1240:a] footer: [6096:f]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [608:a] footer: [608:a]
+0x800003cd0: header: [608:f] footer: [608:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x5550] RIGHT[0x0]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [24:a] footer: [24:a]
+0x800004408: header: [24:a] footer: [24:a]
+0x800004420: header: [24:f] footer: [24:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800004438: header: [24:a] footer: [24:a]
+0x800004450: header: [24:a] footer: [24:a]
+0x800004468: header: [1240:a] footer: [57280:f]
+0x800004940: header: [608:a] footer: [608:a]
+0x800004ba0: header: [1240:a] footer: [44904:f]
+0x800005078: header: [1240:a] footer: [45176:a]
+0x800005550: header: [304:f] footer: [304:f]
+BST:PREV[0x3cd0] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800005680: EOL
+do malloc with size [1234]...
+input size is [1234], actual size is [1240]
+extend heap size...
+extend words: [310], extend size: [1240]
+coalesce block [0x800005680]...
+remove node block [0x800005550] from bst list...
+place a block, split if necessary...
+insert node [0x800005a28] to bst list...
+mm_malloc
+Heap (0x800000030):
+BST root (0x800003cd0)
+small list head ((nil)) with size 16
+small list head (0x800004420) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:a] footer: [24:a]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:a] footer: [60032:f]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [45904:a]
+0x8000013b0: header: [1240:a] footer: [20488:a]
+0x800001888: header: [1240:a] footer: [2344:a]
+0x800001d60: header: [1240:a] footer: [45144:f]
+0x800002238: header: [1240:a] footer: [32960:a]
+0x800002710: header: [1240:a] footer: [18928:f]
+0x800002be8: header: [1240:a] footer: [37424:f]
+0x8000030c0: header: [1240:a] footer: [6096:f]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [608:a] footer: [608:a]
+0x800003cd0: header: [608:f] footer: [608:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x5a28] RIGHT[0x0]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [24:a] footer: [24:a]
+0x800004408: header: [24:a] footer: [24:a]
+0x800004420: header: [24:f] footer: [24:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800004438: header: [24:a] footer: [24:a]
+0x800004450: header: [24:a] footer: [24:a]
+0x800004468: header: [1240:a] footer: [57280:f]
+0x800004940: header: [608:a] footer: [608:a]
+0x800004ba0: header: [1240:a] footer: [44904:f]
+0x800005078: header: [1240:a] footer: [45176:a]
+0x800005550: header: [1240:a] footer: [1944:a]
+0x800005a28: header: [304:f] footer: [304:f]
+BST:PREV[0x3cd0] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800005b58: EOL
+do malloc with size [1234]...
+input size is [1234], actual size is [1240]
+extend heap size...
+extend words: [310], extend size: [1240]
+coalesce block [0x800005b58]...
+remove node block [0x800005a28] from bst list...
+place a block, split if necessary...
+insert node [0x800005f00] to bst list...
+mm_malloc
+Heap (0x800000030):
+BST root (0x800003cd0)
+small list head ((nil)) with size 16
+small list head (0x800004420) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:a] footer: [24:a]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:a] footer: [60032:f]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [45904:a]
+0x8000013b0: header: [1240:a] footer: [20488:a]
+0x800001888: header: [1240:a] footer: [2344:a]
+0x800001d60: header: [1240:a] footer: [45144:f]
+0x800002238: header: [1240:a] footer: [32960:a]
+0x800002710: header: [1240:a] footer: [18928:f]
+0x800002be8: header: [1240:a] footer: [37424:f]
+0x8000030c0: header: [1240:a] footer: [6096:f]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [608:a] footer: [608:a]
+0x800003cd0: header: [608:f] footer: [608:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x5f00] RIGHT[0x0]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [24:a] footer: [24:a]
+0x800004408: header: [24:a] footer: [24:a]
+0x800004420: header: [24:f] footer: [24:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800004438: header: [24:a] footer: [24:a]
+0x800004450: header: [24:a] footer: [24:a]
+0x800004468: header: [1240:a] footer: [57280:f]
+0x800004940: header: [608:a] footer: [608:a]
+0x800004ba0: header: [1240:a] footer: [44904:f]
+0x800005078: header: [1240:a] footer: [45176:a]
+0x800005550: header: [1240:a] footer: [1944:a]
+0x800005a28: header: [1240:a] footer: [11080:a]
+0x800005f00: header: [304:f] footer: [304:f]
+BST:PREV[0x3cd0] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800006030: EOL
+do malloc with size [1234]...
+input size is [1234], actual size is [1240]
+extend heap size...
+extend words: [310], extend size: [1240]
+coalesce block [0x800006030]...
+remove node block [0x800005f00] from bst list...
+place a block, split if necessary...
+insert node [0x8000063d8] to bst list...
+mm_free
+Heap (0x800000030):
+BST root (0x800003cd0)
+small list head ((nil)) with size 16
+small list head (0x800004420) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:a] footer: [24:a]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:a] footer: [60032:f]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [45904:a]
+0x8000013b0: header: [1240:a] footer: [20488:a]
+0x800001888: header: [1240:a] footer: [2344:a]
+0x800001d60: header: [1240:a] footer: [45144:f]
+0x800002238: header: [1240:a] footer: [32960:a]
+0x800002710: header: [1240:a] footer: [18928:f]
+0x800002be8: header: [1240:a] footer: [37424:f]
+0x8000030c0: header: [1240:a] footer: [6096:f]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [608:a] footer: [608:a]
+0x800003cd0: header: [608:f] footer: [608:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x63d8] RIGHT[0x0]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [24:a] footer: [24:a]
+0x800004408: header: [24:a] footer: [24:a]
+0x800004420: header: [24:f] footer: [24:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800004438: header: [24:a] footer: [24:a]
+0x800004450: header: [24:a] footer: [24:a]
+0x800004468: header: [1240:a] footer: [57280:f]
+0x800004940: header: [608:a] footer: [608:a]
+0x800004ba0: header: [1240:a] footer: [44904:f]
+0x800005078: header: [1240:a] footer: [45176:a]
+0x800005550: header: [1240:a] footer: [1944:a]
+0x800005a28: header: [1240:a] footer: [11080:a]
+0x800005f00: header: [1240:a] footer: [25320:f]
+0x8000063d8: header: [304:f] footer: [304:f]
+BST:PREV[0x3cd0] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800006508: EOL
+free block [0x800004438]:
+coalesce block [0x800004438]...
+remove [0x800004420] with size 24 from small list
+[0x800004420] is the head
+insert node [0x800004420] with size 48 to small list...
+index is 5...
+now head pointer is [(nil)]
+mm_free
+Heap (0x800000030):
+BST root (0x800003cd0)
+small list head ((nil)) with size 16
+small list head ((nil)) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head (0x800004420) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:a] footer: [24:a]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:a] footer: [60032:f]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [45904:a]
+0x8000013b0: header: [1240:a] footer: [20488:a]
+0x800001888: header: [1240:a] footer: [2344:a]
+0x800001d60: header: [1240:a] footer: [45144:f]
+0x800002238: header: [1240:a] footer: [32960:a]
+0x800002710: header: [1240:a] footer: [18928:f]
+0x800002be8: header: [1240:a] footer: [37424:f]
+0x8000030c0: header: [1240:a] footer: [6096:f]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [608:a] footer: [608:a]
+0x800003cd0: header: [608:f] footer: [608:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x63d8] RIGHT[0x0]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [24:a] footer: [24:a]
+0x800004408: header: [24:a] footer: [24:a]
+0x800004420: header: [48:f] footer: [48:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800004450: header: [24:a] footer: [24:a]
+0x800004468: header: [1240:a] footer: [57280:f]
+0x800004940: header: [608:a] footer: [608:a]
+0x800004ba0: header: [1240:a] footer: [44904:f]
+0x800005078: header: [1240:a] footer: [45176:a]
+0x800005550: header: [1240:a] footer: [1944:a]
+0x800005a28: header: [1240:a] footer: [11080:a]
+0x800005f00: header: [1240:a] footer: [25320:f]
+0x8000063d8: header: [304:f] footer: [304:f]
+BST:PREV[0x3cd0] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800006508: EOL
+free block [0x800004408]:
+coalesce block [0x800004408]...
+remove [0x800004420] with size 48 from small list
+[0x800004420] is the head
+insert node [0x800004408] to bst list...
+mm_free
+Heap (0x800000030):
+BST root (0x800003cd0)
+small list head ((nil)) with size 16
+small list head ((nil)) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:a] footer: [24:a]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:a] footer: [60032:f]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [45904:a]
+0x8000013b0: header: [1240:a] footer: [20488:a]
+0x800001888: header: [1240:a] footer: [2344:a]
+0x800001d60: header: [1240:a] footer: [45144:f]
+0x800002238: header: [1240:a] footer: [32960:a]
+0x800002710: header: [1240:a] footer: [18928:f]
+0x800002be8: header: [1240:a] footer: [37424:f]
+0x8000030c0: header: [1240:a] footer: [6096:f]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [608:a] footer: [608:a]
+0x800003cd0: header: [608:f] footer: [608:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x63d8] RIGHT[0x0]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [24:a] footer: [24:a]
+0x800004408: header: [72:f] footer: [72:f]
+BST:PREV[0x63d8] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800004450: header: [24:a] footer: [24:a]
+0x800004468: header: [1240:a] footer: [57280:f]
+0x800004940: header: [608:a] footer: [608:a]
+0x800004ba0: header: [1240:a] footer: [44904:f]
+0x800005078: header: [1240:a] footer: [45176:a]
+0x800005550: header: [1240:a] footer: [1944:a]
+0x800005a28: header: [1240:a] footer: [11080:a]
+0x800005f00: header: [1240:a] footer: [25320:f]
+0x8000063d8: header: [304:f] footer: [304:f]
+BST:PREV[0x3cd0] NEXT[0x0] LEFT[0x4408] RIGHT[0x0]
+0x800006508: EOL
+free block [0x800005a28]:
+coalesce block [0x800005a28]...
+insert node [0x800005a28] to bst list...
+mm_free
+Heap (0x800000030):
+BST root (0x800003cd0)
+small list head ((nil)) with size 16
+small list head ((nil)) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:a] footer: [24:a]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:a] footer: [60032:f]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [45904:a]
+0x8000013b0: header: [1240:a] footer: [20488:a]
+0x800001888: header: [1240:a] footer: [2344:a]
+0x800001d60: header: [1240:a] footer: [45144:f]
+0x800002238: header: [1240:a] footer: [32960:a]
+0x800002710: header: [1240:a] footer: [18928:f]
+0x800002be8: header: [1240:a] footer: [37424:f]
+0x8000030c0: header: [1240:a] footer: [6096:f]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [608:a] footer: [608:a]
+0x800003cd0: header: [608:f] footer: [608:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x63d8] RIGHT[0x5a28]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [24:a] footer: [24:a]
+0x800004408: header: [72:f] footer: [72:f]
+BST:PREV[0x63d8] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800004450: header: [24:a] footer: [24:a]
+0x800004468: header: [1240:a] footer: [57280:f]
+0x800004940: header: [608:a] footer: [608:a]
+0x800004ba0: header: [1240:a] footer: [44904:f]
+0x800005078: header: [1240:a] footer: [45176:a]
+0x800005550: header: [1240:a] footer: [1944:a]
+0x800005a28: header: [1240:f] footer: [1240:f]
+BST:PREV[0x3cd0] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800005f00: header: [1240:a] footer: [25320:f]
+0x8000063d8: header: [304:f] footer: [304:f]
+BST:PREV[0x3cd0] NEXT[0x0] LEFT[0x4408] RIGHT[0x0]
+0x800006508: EOL
+free block [0x800000528]:
+coalesce block [0x800000528]...
+insert node [0x800000528] to bst list...
+mm_free
+Heap (0x800000030):
+BST root (0x800003cd0)
+small list head ((nil)) with size 16
+small list head ((nil)) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:a] footer: [24:a]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:f] footer: [1240:f]
+BST:PREV[0x3cd0] NEXT[0x5a28] LEFT[0x0] RIGHT[0x0]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [45904:a]
+0x8000013b0: header: [1240:a] footer: [20488:a]
+0x800001888: header: [1240:a] footer: [2344:a]
+0x800001d60: header: [1240:a] footer: [45144:f]
+0x800002238: header: [1240:a] footer: [32960:a]
+0x800002710: header: [1240:a] footer: [18928:f]
+0x800002be8: header: [1240:a] footer: [37424:f]
+0x8000030c0: header: [1240:a] footer: [6096:f]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [608:a] footer: [608:a]
+0x800003cd0: header: [608:f] footer: [608:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x63d8] RIGHT[0x528]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [24:a] footer: [24:a]
+0x800004408: header: [72:f] footer: [72:f]
+BST:PREV[0x63d8] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800004450: header: [24:a] footer: [24:a]
+0x800004468: header: [1240:a] footer: [57280:f]
+0x800004940: header: [608:a] footer: [608:a]
+0x800004ba0: header: [1240:a] footer: [44904:f]
+0x800005078: header: [1240:a] footer: [45176:a]
+0x800005550: header: [1240:a] footer: [1944:a]
+0x800005a28: header: [1240:f] footer: [1240:f]
+BST:PREV[0x528] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800005f00: header: [1240:a] footer: [25320:f]
+0x8000063d8: header: [304:f] footer: [304:f]
+BST:PREV[0x3cd0] NEXT[0x0] LEFT[0x4408] RIGHT[0x0]
+0x800006508: EOL
+free block [0x800002710]:
+coalesce block [0x800002710]...
+insert node [0x800002710] to bst list...
+mm_malloc
+Heap (0x800000030):
+BST root (0x800003cd0)
+small list head ((nil)) with size 16
+small list head ((nil)) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:a] footer: [24:a]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:f] footer: [1240:f]
+BST:PREV[0x2710] NEXT[0x5a28] LEFT[0x0] RIGHT[0x0]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [45904:a]
+0x8000013b0: header: [1240:a] footer: [20488:a]
+0x800001888: header: [1240:a] footer: [2344:a]
+0x800001d60: header: [1240:a] footer: [45144:f]
+0x800002238: header: [1240:a] footer: [32960:a]
+0x800002710: header: [1240:f] footer: [1240:f]
+BST:PREV[0x3cd0] NEXT[0x528] LEFT[0x0] RIGHT[0x0]
+0x800002be8: header: [1240:a] footer: [37424:f]
+0x8000030c0: header: [1240:a] footer: [6096:f]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [608:a] footer: [608:a]
+0x800003cd0: header: [608:f] footer: [608:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x63d8] RIGHT[0x2710]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [24:a] footer: [24:a]
+0x800004408: header: [72:f] footer: [72:f]
+BST:PREV[0x63d8] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800004450: header: [24:a] footer: [24:a]
+0x800004468: header: [1240:a] footer: [57280:f]
+0x800004940: header: [608:a] footer: [608:a]
+0x800004ba0: header: [1240:a] footer: [44904:f]
+0x800005078: header: [1240:a] footer: [45176:a]
+0x800005550: header: [1240:a] footer: [1944:a]
+0x800005a28: header: [1240:f] footer: [1240:f]
+BST:PREV[0x528] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800005f00: header: [1240:a] footer: [25320:f]
+0x8000063d8: header: [304:f] footer: [304:f]
+BST:PREV[0x3cd0] NEXT[0x0] LEFT[0x4408] RIGHT[0x0]
+0x800006508: EOL
+do malloc with size [1234]...
+input size is [1234], actual size is [1240]
+remove node block [0x800002710] from bst list...
+place a block, split if necessary...
+mm_malloc
+Heap (0x800000030):
+BST root (0x800003cd0)
+small list head ((nil)) with size 16
+small list head ((nil)) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:a] footer: [24:a]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:f] footer: [1240:f]
+BST:PREV[0x3cd0] NEXT[0x5a28] LEFT[0x0] RIGHT[0x0]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [45904:a]
+0x8000013b0: header: [1240:a] footer: [20488:a]
+0x800001888: header: [1240:a] footer: [2344:a]
+0x800001d60: header: [1240:a] footer: [45144:f]
+0x800002238: header: [1240:a] footer: [32960:a]
+0x800002710: header: [1240:a] footer: [11400:a]
+0x800002be8: header: [1240:a] footer: [37424:f]
+0x8000030c0: header: [1240:a] footer: [6096:f]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [608:a] footer: [608:a]
+0x800003cd0: header: [608:f] footer: [608:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x63d8] RIGHT[0x528]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [24:a] footer: [24:a]
+0x800004408: header: [72:f] footer: [72:f]
+BST:PREV[0x63d8] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800004450: header: [24:a] footer: [24:a]
+0x800004468: header: [1240:a] footer: [57280:f]
+0x800004940: header: [608:a] footer: [608:a]
+0x800004ba0: header: [1240:a] footer: [44904:f]
+0x800005078: header: [1240:a] footer: [45176:a]
+0x800005550: header: [1240:a] footer: [1944:a]
+0x800005a28: header: [1240:f] footer: [1240:f]
+BST:PREV[0x528] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800005f00: header: [1240:a] footer: [25320:f]
+0x8000063d8: header: [304:f] footer: [304:f]
+BST:PREV[0x3cd0] NEXT[0x0] LEFT[0x4408] RIGHT[0x0]
+0x800006508: EOL
+do malloc with size [1234]...
+input size is [1234], actual size is [1240]
+remove node block [0x800000528] from bst list...
+place a block, split if necessary...
+mm_free
+Heap (0x800000030):
+BST root (0x800003cd0)
+small list head ((nil)) with size 16
+small list head ((nil)) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:a] footer: [24:a]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:a] footer: [37528:a]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [45904:a]
+0x8000013b0: header: [1240:a] footer: [20488:a]
+0x800001888: header: [1240:a] footer: [2344:a]
+0x800001d60: header: [1240:a] footer: [45144:f]
+0x800002238: header: [1240:a] footer: [32960:a]
+0x800002710: header: [1240:a] footer: [11400:a]
+0x800002be8: header: [1240:a] footer: [37424:f]
+0x8000030c0: header: [1240:a] footer: [6096:f]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [608:a] footer: [608:a]
+0x800003cd0: header: [608:f] footer: [608:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x63d8] RIGHT[0x5a28]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [24:a] footer: [24:a]
+0x800004408: header: [72:f] footer: [72:f]
+BST:PREV[0x63d8] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800004450: header: [24:a] footer: [24:a]
+0x800004468: header: [1240:a] footer: [57280:f]
+0x800004940: header: [608:a] footer: [608:a]
+0x800004ba0: header: [1240:a] footer: [44904:f]
+0x800005078: header: [1240:a] footer: [45176:a]
+0x800005550: header: [1240:a] footer: [1944:a]
+0x800005a28: header: [1240:f] footer: [1240:f]
+BST:PREV[0x3cd0] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800005f00: header: [1240:a] footer: [25320:f]
+0x8000063d8: header: [304:f] footer: [304:f]
+BST:PREV[0x3cd0] NEXT[0x0] LEFT[0x4408] RIGHT[0x0]
+0x800006508: EOL
+free block [0x800002238]:
+coalesce block [0x800002238]...
+insert node [0x800002238] to bst list...
+mm_malloc
+Heap (0x800000030):
+BST root (0x800003cd0)
+small list head ((nil)) with size 16
+small list head ((nil)) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:a] footer: [24:a]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:a] footer: [37528:a]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [45904:a]
+0x8000013b0: header: [1240:a] footer: [20488:a]
+0x800001888: header: [1240:a] footer: [2344:a]
+0x800001d60: header: [1240:a] footer: [45144:f]
+0x800002238: header: [1240:f] footer: [1240:f]
+BST:PREV[0x3cd0] NEXT[0x5a28] LEFT[0x0] RIGHT[0x0]
+0x800002710: header: [1240:a] footer: [11400:a]
+0x800002be8: header: [1240:a] footer: [37424:f]
+0x8000030c0: header: [1240:a] footer: [6096:f]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [608:a] footer: [608:a]
+0x800003cd0: header: [608:f] footer: [608:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x63d8] RIGHT[0x2238]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [24:a] footer: [24:a]
+0x800004408: header: [72:f] footer: [72:f]
+BST:PREV[0x63d8] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800004450: header: [24:a] footer: [24:a]
+0x800004468: header: [1240:a] footer: [57280:f]
+0x800004940: header: [608:a] footer: [608:a]
+0x800004ba0: header: [1240:a] footer: [44904:f]
+0x800005078: header: [1240:a] footer: [45176:a]
+0x800005550: header: [1240:a] footer: [1944:a]
+0x800005a28: header: [1240:f] footer: [1240:f]
+BST:PREV[0x2238] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800005f00: header: [1240:a] footer: [25320:f]
+0x8000063d8: header: [304:f] footer: [304:f]
+BST:PREV[0x3cd0] NEXT[0x0] LEFT[0x4408] RIGHT[0x0]
+0x800006508: EOL
+do malloc with size [600]...
+input size is [600], actual size is [608]
+remove node block [0x800003cd0] from bst list...
+place a block, split if necessary...
+mm_free
+Heap (0x800000030):
+BST root (0x800002238)
+small list head ((nil)) with size 16
+small list head ((nil)) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:a] footer: [24:a]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:a] footer: [37528:a]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [45904:a]
+0x8000013b0: header: [1240:a] footer: [20488:a]
+0x800001888: header: [1240:a] footer: [2344:a]
+0x800001d60: header: [1240:a] footer: [45144:f]
+0x800002238: header: [1240:f] footer: [1240:f]
+BST:PREV[0x0] NEXT[0x5a28] LEFT[0x63d8] RIGHT[0x0]
+0x800002710: header: [1240:a] footer: [11400:a]
+0x800002be8: header: [1240:a] footer: [37424:f]
+0x8000030c0: header: [1240:a] footer: [6096:f]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [608:a] footer: [608:a]
+0x800003cd0: header: [608:a] footer: [608:a]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [24:a] footer: [24:a]
+0x800004408: header: [72:f] footer: [72:f]
+BST:PREV[0x63d8] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800004450: header: [24:a] footer: [24:a]
+0x800004468: header: [1240:a] footer: [57280:f]
+0x800004940: header: [608:a] footer: [608:a]
+0x800004ba0: header: [1240:a] footer: [44904:f]
+0x800005078: header: [1240:a] footer: [45176:a]
+0x800005550: header: [1240:a] footer: [1944:a]
+0x800005a28: header: [1240:f] footer: [1240:f]
+BST:PREV[0x2238] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800005f00: header: [1240:a] footer: [25320:f]
+0x8000063d8: header: [304:f] footer: [304:f]
+BST:PREV[0x2238] NEXT[0x0] LEFT[0x4408] RIGHT[0x0]
+0x800006508: EOL
+free block [0x8000043f0]:
+coalesce block [0x8000043f0]...
+remove node block [0x800004408] from bst list...
+insert node [0x8000043f0] to bst list...
+mm_malloc
+Heap (0x800000030):
+BST root (0x800002238)
+small list head ((nil)) with size 16
+small list head ((nil)) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:a] footer: [24:a]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:a] footer: [37528:a]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [45904:a]
+0x8000013b0: header: [1240:a] footer: [20488:a]
+0x800001888: header: [1240:a] footer: [2344:a]
+0x800001d60: header: [1240:a] footer: [45144:f]
+0x800002238: header: [1240:f] footer: [1240:f]
+BST:PREV[0x0] NEXT[0x5a28] LEFT[0x63d8] RIGHT[0x0]
+0x800002710: header: [1240:a] footer: [11400:a]
+0x800002be8: header: [1240:a] footer: [37424:f]
+0x8000030c0: header: [1240:a] footer: [6096:f]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [608:a] footer: [608:a]
+0x800003cd0: header: [608:a] footer: [608:a]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [96:f] footer: [96:f]
+BST:PREV[0x63d8] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800004450: header: [24:a] footer: [24:a]
+0x800004468: header: [1240:a] footer: [57280:f]
+0x800004940: header: [608:a] footer: [608:a]
+0x800004ba0: header: [1240:a] footer: [44904:f]
+0x800005078: header: [1240:a] footer: [45176:a]
+0x800005550: header: [1240:a] footer: [1944:a]
+0x800005a28: header: [1240:f] footer: [1240:f]
+BST:PREV[0x2238] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800005f00: header: [1240:a] footer: [25320:f]
+0x8000063d8: header: [304:f] footer: [304:f]
+BST:PREV[0x2238] NEXT[0x0] LEFT[0x43f0] RIGHT[0x0]
+0x800006508: EOL
+do malloc with size [600]...
+input size is [600], actual size is [608]
+remove node block [0x800002238] from bst list...
+place a block, split if necessary...
+insert node [0x800002498] to bst list...
+mm_free
+Heap (0x800000030):
+BST root (0x800005a28)
+small list head ((nil)) with size 16
+small list head ((nil)) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:a] footer: [24:a]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:a] footer: [37528:a]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [45904:a]
+0x8000013b0: header: [1240:a] footer: [20488:a]
+0x800001888: header: [1240:a] footer: [2344:a]
+0x800001d60: header: [1240:a] footer: [45144:f]
+0x800002238: header: [608:a] footer: [608:a]
+0x800002498: header: [632:f] footer: [632:f]
+BST:PREV[0x63d8] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800002710: header: [1240:a] footer: [11400:a]
+0x800002be8: header: [1240:a] footer: [37424:f]
+0x8000030c0: header: [1240:a] footer: [6096:f]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [608:a] footer: [608:a]
+0x800003cd0: header: [608:a] footer: [608:a]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [96:f] footer: [96:f]
+BST:PREV[0x63d8] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800004450: header: [24:a] footer: [24:a]
+0x800004468: header: [1240:a] footer: [57280:f]
+0x800004940: header: [608:a] footer: [608:a]
+0x800004ba0: header: [1240:a] footer: [44904:f]
+0x800005078: header: [1240:a] footer: [45176:a]
+0x800005550: header: [1240:a] footer: [1944:a]
+0x800005a28: header: [1240:f] footer: [1240:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x63d8] RIGHT[0x0]
+0x800005f00: header: [1240:a] footer: [25320:f]
+0x8000063d8: header: [304:f] footer: [304:f]
+BST:PREV[0x5a28] NEXT[0x0] LEFT[0x43f0] RIGHT[0x2498]
+0x800006508: EOL
+free block [0x800000528]:
+coalesce block [0x800000528]...
+insert node [0x800000528] to bst list...
+mm_malloc
+Heap (0x800000030):
+BST root (0x800000528)
+small list head ((nil)) with size 16
+small list head ((nil)) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:a] footer: [24:a]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:f] footer: [1240:f]
+BST:PREV[0x0] NEXT[0x5a28] LEFT[0x63d8] RIGHT[0x0]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [45904:a]
+0x8000013b0: header: [1240:a] footer: [20488:a]
+0x800001888: header: [1240:a] footer: [2344:a]
+0x800001d60: header: [1240:a] footer: [45144:f]
+0x800002238: header: [608:a] footer: [608:a]
+0x800002498: header: [632:f] footer: [632:f]
+BST:PREV[0x63d8] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800002710: header: [1240:a] footer: [11400:a]
+0x800002be8: header: [1240:a] footer: [37424:f]
+0x8000030c0: header: [1240:a] footer: [6096:f]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [608:a] footer: [608:a]
+0x800003cd0: header: [608:a] footer: [608:a]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [96:f] footer: [96:f]
+BST:PREV[0x63d8] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800004450: header: [24:a] footer: [24:a]
+0x800004468: header: [1240:a] footer: [57280:f]
+0x800004940: header: [608:a] footer: [608:a]
+0x800004ba0: header: [1240:a] footer: [44904:f]
+0x800005078: header: [1240:a] footer: [45176:a]
+0x800005550: header: [1240:a] footer: [1944:a]
+0x800005a28: header: [1240:f] footer: [1240:f]
+BST:PREV[0x528] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800005f00: header: [1240:a] footer: [25320:f]
+0x8000063d8: header: [304:f] footer: [304:f]
+BST:PREV[0x528] NEXT[0x0] LEFT[0x43f0] RIGHT[0x2498]
+0x800006508: EOL
+do malloc with size [134]...
+input size is [134], actual size is [144]
+remove node block [0x8000063d8] from bst list...
+place a block, split if necessary...
+insert node [0x800006468] to bst list...
+mm_malloc
+Heap (0x800000030):
+BST root (0x800000528)
+small list head ((nil)) with size 16
+small list head ((nil)) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:a] footer: [24:a]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:f] footer: [1240:f]
+BST:PREV[0x0] NEXT[0x5a28] LEFT[0x2498] RIGHT[0x0]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [45904:a]
+0x8000013b0: header: [1240:a] footer: [20488:a]
+0x800001888: header: [1240:a] footer: [2344:a]
+0x800001d60: header: [1240:a] footer: [45144:f]
+0x800002238: header: [608:a] footer: [608:a]
+0x800002498: header: [632:f] footer: [632:f]
+BST:PREV[0x528] NEXT[0x0] LEFT[0x43f0] RIGHT[0x0]
+0x800002710: header: [1240:a] footer: [11400:a]
+0x800002be8: header: [1240:a] footer: [37424:f]
+0x8000030c0: header: [1240:a] footer: [6096:f]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [608:a] footer: [608:a]
+0x800003cd0: header: [608:a] footer: [608:a]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [96:f] footer: [96:f]
+BST:PREV[0x2498] NEXT[0x0] LEFT[0x0] RIGHT[0x6468]
+0x800004450: header: [24:a] footer: [24:a]
+0x800004468: header: [1240:a] footer: [57280:f]
+0x800004940: header: [608:a] footer: [608:a]
+0x800004ba0: header: [1240:a] footer: [44904:f]
+0x800005078: header: [1240:a] footer: [45176:a]
+0x800005550: header: [1240:a] footer: [1944:a]
+0x800005a28: header: [1240:f] footer: [1240:f]
+BST:PREV[0x528] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800005f00: header: [1240:a] footer: [25320:f]
+0x8000063d8: header: [144:a] footer: [144:a]
+0x800006468: header: [160:f] footer: [160:f]
+BST:PREV[0x43f0] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800006508: EOL
+do malloc with size [134]...
+input size is [134], actual size is [144]
+remove node block [0x800006468] from bst list...
+place a block, split if necessary...
+insert node [0x8000064f8] with size 16 to small list...
+index is 1...
+now head pointer is [(nil)]
+mm_free
+Heap (0x800000030):
+BST root (0x800000528)
+small list head (0x8000064f8) with size 16
+small list head ((nil)) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:a] footer: [24:a]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:f] footer: [1240:f]
+BST:PREV[0x0] NEXT[0x5a28] LEFT[0x2498] RIGHT[0x0]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [45904:a]
+0x8000013b0: header: [1240:a] footer: [20488:a]
+0x800001888: header: [1240:a] footer: [2344:a]
+0x800001d60: header: [1240:a] footer: [45144:f]
+0x800002238: header: [608:a] footer: [608:a]
+0x800002498: header: [632:f] footer: [632:f]
+BST:PREV[0x528] NEXT[0x0] LEFT[0x43f0] RIGHT[0x0]
+0x800002710: header: [1240:a] footer: [11400:a]
+0x800002be8: header: [1240:a] footer: [37424:f]
+0x8000030c0: header: [1240:a] footer: [6096:f]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [608:a] footer: [608:a]
+0x800003cd0: header: [608:a] footer: [608:a]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [96:f] footer: [96:f]
+BST:PREV[0x2498] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800004450: header: [24:a] footer: [24:a]
+0x800004468: header: [1240:a] footer: [57280:f]
+0x800004940: header: [608:a] footer: [608:a]
+0x800004ba0: header: [1240:a] footer: [44904:f]
+0x800005078: header: [1240:a] footer: [45176:a]
+0x800005550: header: [1240:a] footer: [1944:a]
+0x800005a28: header: [1240:f] footer: [1240:f]
+BST:PREV[0x528] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800005f00: header: [1240:a] footer: [25320:f]
+0x8000063d8: header: [144:a] footer: [144:a]
+0x800006468: header: [144:a] footer: [144:a]
+0x8000064f8: header: [16:f] footer: [16:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800006508: EOL
+free block [0x800001d60]:
+coalesce block [0x800001d60]...
+insert node [0x800001d60] to bst list...
+mm_free
+Heap (0x800000030):
+BST root (0x800001d60)
+small list head (0x8000064f8) with size 16
+small list head ((nil)) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:a] footer: [24:a]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:f] footer: [1240:f]
+BST:PREV[0x1d60] NEXT[0x5a28] LEFT[0x0] RIGHT[0x0]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [45904:a]
+0x8000013b0: header: [1240:a] footer: [20488:a]
+0x800001888: header: [1240:a] footer: [2344:a]
+0x800001d60: header: [1240:f] footer: [1240:f]
+BST:PREV[0x0] NEXT[0x528] LEFT[0x2498] RIGHT[0x0]
+0x800002238: header: [608:a] footer: [608:a]
+0x800002498: header: [632:f] footer: [632:f]
+BST:PREV[0x1d60] NEXT[0x0] LEFT[0x43f0] RIGHT[0x0]
+0x800002710: header: [1240:a] footer: [11400:a]
+0x800002be8: header: [1240:a] footer: [37424:f]
+0x8000030c0: header: [1240:a] footer: [6096:f]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [608:a] footer: [608:a]
+0x800003cd0: header: [608:a] footer: [608:a]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [96:f] footer: [96:f]
+BST:PREV[0x2498] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800004450: header: [24:a] footer: [24:a]
+0x800004468: header: [1240:a] footer: [57280:f]
+0x800004940: header: [608:a] footer: [608:a]
+0x800004ba0: header: [1240:a] footer: [44904:f]
+0x800005078: header: [1240:a] footer: [45176:a]
+0x800005550: header: [1240:a] footer: [1944:a]
+0x800005a28: header: [1240:f] footer: [1240:f]
+BST:PREV[0x528] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800005f00: header: [1240:a] footer: [25320:f]
+0x8000063d8: header: [144:a] footer: [144:a]
+0x800006468: header: [144:a] footer: [144:a]
+0x8000064f8: header: [16:f] footer: [16:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800006508: EOL
+free block [0x800000038]:
+coalesce block [0x800000038]...
+insert node [0x800000038] with size 24 to small list...
+index is 2...
+now head pointer is [(nil)]
+mm_free
+Heap (0x800000030):
+BST root (0x800001d60)
+small list head (0x8000064f8) with size 16
+small list head (0x800000038) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:f] footer: [24:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:f] footer: [1240:f]
+BST:PREV[0x1d60] NEXT[0x5a28] LEFT[0x0] RIGHT[0x0]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [45904:a]
+0x8000013b0: header: [1240:a] footer: [20488:a]
+0x800001888: header: [1240:a] footer: [2344:a]
+0x800001d60: header: [1240:f] footer: [1240:f]
+BST:PREV[0x0] NEXT[0x528] LEFT[0x2498] RIGHT[0x0]
+0x800002238: header: [608:a] footer: [608:a]
+0x800002498: header: [632:f] footer: [632:f]
+BST:PREV[0x1d60] NEXT[0x0] LEFT[0x43f0] RIGHT[0x0]
+0x800002710: header: [1240:a] footer: [11400:a]
+0x800002be8: header: [1240:a] footer: [37424:f]
+0x8000030c0: header: [1240:a] footer: [6096:f]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [608:a] footer: [608:a]
+0x800003cd0: header: [608:a] footer: [608:a]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [96:f] footer: [96:f]
+BST:PREV[0x2498] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800004450: header: [24:a] footer: [24:a]
+0x800004468: header: [1240:a] footer: [57280:f]
+0x800004940: header: [608:a] footer: [608:a]
+0x800004ba0: header: [1240:a] footer: [44904:f]
+0x800005078: header: [1240:a] footer: [45176:a]
+0x800005550: header: [1240:a] footer: [1944:a]
+0x800005a28: header: [1240:f] footer: [1240:f]
+BST:PREV[0x528] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800005f00: header: [1240:a] footer: [25320:f]
+0x8000063d8: header: [144:a] footer: [144:a]
+0x800006468: header: [144:a] footer: [144:a]
+0x8000064f8: header: [16:f] footer: [16:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800006508: EOL
+free block [0x800001888]:
+coalesce block [0x800001888]...
+remove node block [0x800001d60] from bst list...
+insert node [0x800001888] to bst list...
+mm_malloc
+Heap (0x800000030):
+BST root (0x800000528)
+small list head (0x8000064f8) with size 16
+small list head (0x800000038) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:f] footer: [24:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:f] footer: [1240:f]
+BST:PREV[0x0] NEXT[0x5a28] LEFT[0x2498] RIGHT[0x1888]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [45904:a]
+0x8000013b0: header: [1240:a] footer: [20488:a]
+0x800001888: header: [2480:f] footer: [2480:f]
+BST:PREV[0x528] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800002238: header: [608:a] footer: [608:a]
+0x800002498: header: [632:f] footer: [632:f]
+BST:PREV[0x528] NEXT[0x0] LEFT[0x43f0] RIGHT[0x0]
+0x800002710: header: [1240:a] footer: [11400:a]
+0x800002be8: header: [1240:a] footer: [37424:f]
+0x8000030c0: header: [1240:a] footer: [6096:f]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [608:a] footer: [608:a]
+0x800003cd0: header: [608:a] footer: [608:a]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [96:f] footer: [96:f]
+BST:PREV[0x2498] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800004450: header: [24:a] footer: [24:a]
+0x800004468: header: [1240:a] footer: [57280:f]
+0x800004940: header: [608:a] footer: [608:a]
+0x800004ba0: header: [1240:a] footer: [44904:f]
+0x800005078: header: [1240:a] footer: [45176:a]
+0x800005550: header: [1240:a] footer: [1944:a]
+0x800005a28: header: [1240:f] footer: [1240:f]
+BST:PREV[0x528] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800005f00: header: [1240:a] footer: [25320:f]
+0x8000063d8: header: [144:a] footer: [144:a]
+0x800006468: header: [144:a] footer: [144:a]
+0x8000064f8: header: [16:f] footer: [16:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800006508: EOL
+do malloc with size [134]...
+input size is [134], actual size is [144]
+remove node block [0x800002498] from bst list...
+place a block, split if necessary...
+insert node [0x800002528] to bst list...
+mm_malloc
+Heap (0x800000030):
+BST root (0x800000528)
+small list head (0x8000064f8) with size 16
+small list head (0x800000038) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:f] footer: [24:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:f] footer: [1240:f]
+BST:PREV[0x0] NEXT[0x5a28] LEFT[0x43f0] RIGHT[0x1888]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [45904:a]
+0x8000013b0: header: [1240:a] footer: [20488:a]
+0x800001888: header: [2480:f] footer: [2480:f]
+BST:PREV[0x528] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800002238: header: [608:a] footer: [608:a]
+0x800002498: header: [144:a] footer: [144:a]
+0x800002528: header: [488:f] footer: [488:f]
+BST:PREV[0x43f0] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800002710: header: [1240:a] footer: [11400:a]
+0x800002be8: header: [1240:a] footer: [37424:f]
+0x8000030c0: header: [1240:a] footer: [6096:f]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [608:a] footer: [608:a]
+0x800003cd0: header: [608:a] footer: [608:a]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [96:f] footer: [96:f]
+BST:PREV[0x528] NEXT[0x0] LEFT[0x0] RIGHT[0x2528]
+0x800004450: header: [24:a] footer: [24:a]
+0x800004468: header: [1240:a] footer: [57280:f]
+0x800004940: header: [608:a] footer: [608:a]
+0x800004ba0: header: [1240:a] footer: [44904:f]
+0x800005078: header: [1240:a] footer: [45176:a]
+0x800005550: header: [1240:a] footer: [1944:a]
+0x800005a28: header: [1240:f] footer: [1240:f]
+BST:PREV[0x528] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800005f00: header: [1240:a] footer: [25320:f]
+0x8000063d8: header: [144:a] footer: [144:a]
+0x800006468: header: [144:a] footer: [144:a]
+0x8000064f8: header: [16:f] footer: [16:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800006508: EOL
+do malloc with size [134]...
+input size is [134], actual size is [144]
+remove node block [0x800002528] from bst list...
+place a block, split if necessary...
+insert node [0x8000025b8] to bst list...
+mm_free
+Heap (0x800000030):
+BST root (0x800000528)
+small list head (0x8000064f8) with size 16
+small list head (0x800000038) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:f] footer: [24:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:f] footer: [1240:f]
+BST:PREV[0x0] NEXT[0x5a28] LEFT[0x43f0] RIGHT[0x1888]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [45904:a]
+0x8000013b0: header: [1240:a] footer: [20488:a]
+0x800001888: header: [2480:f] footer: [2480:f]
+BST:PREV[0x528] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800002238: header: [608:a] footer: [608:a]
+0x800002498: header: [144:a] footer: [144:a]
+0x800002528: header: [144:a] footer: [144:a]
+0x8000025b8: header: [344:f] footer: [344:f]
+BST:PREV[0x43f0] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800002710: header: [1240:a] footer: [11400:a]
+0x800002be8: header: [1240:a] footer: [37424:f]
+0x8000030c0: header: [1240:a] footer: [6096:f]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [608:a] footer: [608:a]
+0x800003cd0: header: [608:a] footer: [608:a]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [96:f] footer: [96:f]
+BST:PREV[0x528] NEXT[0x0] LEFT[0x0] RIGHT[0x25b8]
+0x800004450: header: [24:a] footer: [24:a]
+0x800004468: header: [1240:a] footer: [57280:f]
+0x800004940: header: [608:a] footer: [608:a]
+0x800004ba0: header: [1240:a] footer: [44904:f]
+0x800005078: header: [1240:a] footer: [45176:a]
+0x800005550: header: [1240:a] footer: [1944:a]
+0x800005a28: header: [1240:f] footer: [1240:f]
+BST:PREV[0x528] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800005f00: header: [1240:a] footer: [25320:f]
+0x8000063d8: header: [144:a] footer: [144:a]
+0x800006468: header: [144:a] footer: [144:a]
+0x8000064f8: header: [16:f] footer: [16:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800006508: EOL
+free block [0x800002be8]:
+coalesce block [0x800002be8]...
+insert node [0x800002be8] to bst list...
+mm_free
+Heap (0x800000030):
+BST root (0x800002be8)
+small list head (0x8000064f8) with size 16
+small list head (0x800000038) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:f] footer: [24:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:f] footer: [1240:f]
+BST:PREV[0x2be8] NEXT[0x5a28] LEFT[0x0] RIGHT[0x0]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [45904:a]
+0x8000013b0: header: [1240:a] footer: [20488:a]
+0x800001888: header: [2480:f] footer: [2480:f]
+BST:PREV[0x2be8] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800002238: header: [608:a] footer: [608:a]
+0x800002498: header: [144:a] footer: [144:a]
+0x800002528: header: [144:a] footer: [144:a]
+0x8000025b8: header: [344:f] footer: [344:f]
+BST:PREV[0x43f0] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800002710: header: [1240:a] footer: [11400:a]
+0x800002be8: header: [1240:f] footer: [1240:f]
+BST:PREV[0x0] NEXT[0x528] LEFT[0x43f0] RIGHT[0x1888]
+0x8000030c0: header: [1240:a] footer: [6096:f]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [608:a] footer: [608:a]
+0x800003cd0: header: [608:a] footer: [608:a]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [96:f] footer: [96:f]
+BST:PREV[0x2be8] NEXT[0x0] LEFT[0x0] RIGHT[0x25b8]
+0x800004450: header: [24:a] footer: [24:a]
+0x800004468: header: [1240:a] footer: [57280:f]
+0x800004940: header: [608:a] footer: [608:a]
+0x800004ba0: header: [1240:a] footer: [44904:f]
+0x800005078: header: [1240:a] footer: [45176:a]
+0x800005550: header: [1240:a] footer: [1944:a]
+0x800005a28: header: [1240:f] footer: [1240:f]
+BST:PREV[0x528] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800005f00: header: [1240:a] footer: [25320:f]
+0x8000063d8: header: [144:a] footer: [144:a]
+0x800006468: header: [144:a] footer: [144:a]
+0x8000064f8: header: [16:f] footer: [16:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800006508: EOL
+free block [0x800004450]:
+coalesce block [0x800004450]...
+remove node block [0x8000043f0] from bst list...
+insert node [0x8000043f0] to bst list...
+mm_free
+Heap (0x800000030):
+BST root (0x800002be8)
+small list head (0x8000064f8) with size 16
+small list head (0x800000038) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:f] footer: [24:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:f] footer: [1240:f]
+BST:PREV[0x2be8] NEXT[0x5a28] LEFT[0x0] RIGHT[0x0]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [45904:a]
+0x8000013b0: header: [1240:a] footer: [20488:a]
+0x800001888: header: [2480:f] footer: [2480:f]
+BST:PREV[0x2be8] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800002238: header: [608:a] footer: [608:a]
+0x800002498: header: [144:a] footer: [144:a]
+0x800002528: header: [144:a] footer: [144:a]
+0x8000025b8: header: [344:f] footer: [344:f]
+BST:PREV[0x2be8] NEXT[0x0] LEFT[0x43f0] RIGHT[0x0]
+0x800002710: header: [1240:a] footer: [11400:a]
+0x800002be8: header: [1240:f] footer: [1240:f]
+BST:PREV[0x0] NEXT[0x528] LEFT[0x25b8] RIGHT[0x1888]
+0x8000030c0: header: [1240:a] footer: [6096:f]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [608:a] footer: [608:a]
+0x800003cd0: header: [608:a] footer: [608:a]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [120:f] footer: [120:f]
+BST:PREV[0x25b8] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800004468: header: [1240:a] footer: [57280:f]
+0x800004940: header: [608:a] footer: [608:a]
+0x800004ba0: header: [1240:a] footer: [44904:f]
+0x800005078: header: [1240:a] footer: [45176:a]
+0x800005550: header: [1240:a] footer: [1944:a]
+0x800005a28: header: [1240:f] footer: [1240:f]
+BST:PREV[0x528] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800005f00: header: [1240:a] footer: [25320:f]
+0x8000063d8: header: [144:a] footer: [144:a]
+0x800006468: header: [144:a] footer: [144:a]
+0x8000064f8: header: [16:f] footer: [16:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800006508: EOL
+free block [0x800003a70]:
+coalesce block [0x800003a70]...
+insert node [0x800003a70] to bst list...
+mm_free
+Heap (0x800000030):
+BST root (0x800002be8)
+small list head (0x8000064f8) with size 16
+small list head (0x800000038) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:f] footer: [24:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:f] footer: [1240:f]
+BST:PREV[0x2be8] NEXT[0x5a28] LEFT[0x0] RIGHT[0x0]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [45904:a]
+0x8000013b0: header: [1240:a] footer: [20488:a]
+0x800001888: header: [2480:f] footer: [2480:f]
+BST:PREV[0x2be8] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800002238: header: [608:a] footer: [608:a]
+0x800002498: header: [144:a] footer: [144:a]
+0x800002528: header: [144:a] footer: [144:a]
+0x8000025b8: header: [344:f] footer: [344:f]
+BST:PREV[0x2be8] NEXT[0x0] LEFT[0x43f0] RIGHT[0x3a70]
+0x800002710: header: [1240:a] footer: [11400:a]
+0x800002be8: header: [1240:f] footer: [1240:f]
+BST:PREV[0x0] NEXT[0x528] LEFT[0x25b8] RIGHT[0x1888]
+0x8000030c0: header: [1240:a] footer: [6096:f]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [608:f] footer: [608:f]
+BST:PREV[0x25b8] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800003cd0: header: [608:a] footer: [608:a]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [120:f] footer: [120:f]
+BST:PREV[0x25b8] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800004468: header: [1240:a] footer: [57280:f]
+0x800004940: header: [608:a] footer: [608:a]
+0x800004ba0: header: [1240:a] footer: [44904:f]
+0x800005078: header: [1240:a] footer: [45176:a]
+0x800005550: header: [1240:a] footer: [1944:a]
+0x800005a28: header: [1240:f] footer: [1240:f]
+BST:PREV[0x528] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800005f00: header: [1240:a] footer: [25320:f]
+0x8000063d8: header: [144:a] footer: [144:a]
+0x800006468: header: [144:a] footer: [144:a]
+0x8000064f8: header: [16:f] footer: [16:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800006508: EOL
+free block [0x800005550]:
+coalesce block [0x800005550]...
+remove node block [0x800005a28] from bst list...
+insert node [0x800005550] to bst list...
+mm_free
+Heap (0x800000030):
+BST root (0x800002be8)
+small list head (0x8000064f8) with size 16
+small list head (0x800000038) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:f] footer: [24:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:f] footer: [1240:f]
+BST:PREV[0x2be8] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [45904:a]
+0x8000013b0: header: [1240:a] footer: [20488:a]
+0x800001888: header: [2480:f] footer: [2480:f]
+BST:PREV[0x5550] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800002238: header: [608:a] footer: [608:a]
+0x800002498: header: [144:a] footer: [144:a]
+0x800002528: header: [144:a] footer: [144:a]
+0x8000025b8: header: [344:f] footer: [344:f]
+BST:PREV[0x2be8] NEXT[0x0] LEFT[0x43f0] RIGHT[0x3a70]
+0x800002710: header: [1240:a] footer: [11400:a]
+0x800002be8: header: [1240:f] footer: [1240:f]
+BST:PREV[0x0] NEXT[0x528] LEFT[0x25b8] RIGHT[0x5550]
+0x8000030c0: header: [1240:a] footer: [6096:f]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [608:f] footer: [608:f]
+BST:PREV[0x25b8] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800003cd0: header: [608:a] footer: [608:a]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [120:f] footer: [120:f]
+BST:PREV[0x25b8] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800004468: header: [1240:a] footer: [57280:f]
+0x800004940: header: [608:a] footer: [608:a]
+0x800004ba0: header: [1240:a] footer: [44904:f]
+0x800005078: header: [1240:a] footer: [45176:a]
+0x800005550: header: [2480:f] footer: [2480:f]
+BST:PREV[0x2be8] NEXT[0x1888] LEFT[0x0] RIGHT[0x0]
+0x800005f00: header: [1240:a] footer: [25320:f]
+0x8000063d8: header: [144:a] footer: [144:a]
+0x800006468: header: [144:a] footer: [144:a]
+0x8000064f8: header: [16:f] footer: [16:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800006508: EOL
+free block [0x800003cd0]:
+coalesce block [0x800003cd0]...
+remove node block [0x800003a70] from bst list...
+insert node [0x800003a70] to bst list...
+mm_free
+Heap (0x800000030):
+BST root (0x800002be8)
+small list head (0x8000064f8) with size 16
+small list head (0x800000038) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:f] footer: [24:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:f] footer: [1240:f]
+BST:PREV[0x2be8] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [45904:a]
+0x8000013b0: header: [1240:a] footer: [20488:a]
+0x800001888: header: [2480:f] footer: [2480:f]
+BST:PREV[0x5550] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800002238: header: [608:a] footer: [608:a]
+0x800002498: header: [144:a] footer: [144:a]
+0x800002528: header: [144:a] footer: [144:a]
+0x8000025b8: header: [344:f] footer: [344:f]
+BST:PREV[0x2be8] NEXT[0x0] LEFT[0x43f0] RIGHT[0x3a70]
+0x800002710: header: [1240:a] footer: [11400:a]
+0x800002be8: header: [1240:f] footer: [1240:f]
+BST:PREV[0x0] NEXT[0x528] LEFT[0x25b8] RIGHT[0x5550]
+0x8000030c0: header: [1240:a] footer: [6096:f]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [1216:f] footer: [1216:f]
+BST:PREV[0x25b8] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [120:f] footer: [120:f]
+BST:PREV[0x25b8] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800004468: header: [1240:a] footer: [57280:f]
+0x800004940: header: [608:a] footer: [608:a]
+0x800004ba0: header: [1240:a] footer: [44904:f]
+0x800005078: header: [1240:a] footer: [45176:a]
+0x800005550: header: [2480:f] footer: [2480:f]
+BST:PREV[0x2be8] NEXT[0x1888] LEFT[0x0] RIGHT[0x0]
+0x800005f00: header: [1240:a] footer: [25320:f]
+0x8000063d8: header: [144:a] footer: [144:a]
+0x800006468: header: [144:a] footer: [144:a]
+0x8000064f8: header: [16:f] footer: [16:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800006508: EOL
+free block [0x800002710]:
+coalesce block [0x800002710]...
+remove node block [0x8000025b8] from bst list...
+remove node block [0x800002be8] from bst list...
+insert node [0x8000025b8] to bst list...
+mm_free
+Heap (0x800000030):
+BST root (0x800000528)
+small list head (0x8000064f8) with size 16
+small list head (0x800000038) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:f] footer: [24:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:f] footer: [1240:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x3a70] RIGHT[0x5550]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [45904:a]
+0x8000013b0: header: [1240:a] footer: [20488:a]
+0x800001888: header: [2480:f] footer: [2480:f]
+BST:PREV[0x5550] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800002238: header: [608:a] footer: [608:a]
+0x800002498: header: [144:a] footer: [144:a]
+0x800002528: header: [144:a] footer: [144:a]
+0x8000025b8: header: [2824:f] footer: [2824:f]
+BST:PREV[0x5550] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x8000030c0: header: [1240:a] footer: [6096:f]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [1216:f] footer: [1216:f]
+BST:PREV[0x528] NEXT[0x0] LEFT[0x43f0] RIGHT[0x0]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [120:f] footer: [120:f]
+BST:PREV[0x3a70] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800004468: header: [1240:a] footer: [57280:f]
+0x800004940: header: [608:a] footer: [608:a]
+0x800004ba0: header: [1240:a] footer: [44904:f]
+0x800005078: header: [1240:a] footer: [45176:a]
+0x800005550: header: [2480:f] footer: [2480:f]
+BST:PREV[0x528] NEXT[0x1888] LEFT[0x0] RIGHT[0x25b8]
+0x800005f00: header: [1240:a] footer: [25320:f]
+0x8000063d8: header: [144:a] footer: [144:a]
+0x800006468: header: [144:a] footer: [144:a]
+0x8000064f8: header: [16:f] footer: [16:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800006508: EOL
+free block [0x800002498]:
+coalesce block [0x800002498]...
+insert node [0x800002498] to bst list...
+mm_free
+Heap (0x800000030):
+BST root (0x800000528)
+small list head (0x8000064f8) with size 16
+small list head (0x800000038) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:f] footer: [24:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:f] footer: [1240:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x3a70] RIGHT[0x5550]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [45904:a]
+0x8000013b0: header: [1240:a] footer: [20488:a]
+0x800001888: header: [2480:f] footer: [2480:f]
+BST:PREV[0x5550] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800002238: header: [608:a] footer: [608:a]
+0x800002498: header: [144:f] footer: [144:f]
+BST:PREV[0x43f0] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800002528: header: [144:a] footer: [144:a]
+0x8000025b8: header: [2824:f] footer: [2824:f]
+BST:PREV[0x5550] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x8000030c0: header: [1240:a] footer: [6096:f]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [1216:f] footer: [1216:f]
+BST:PREV[0x528] NEXT[0x0] LEFT[0x43f0] RIGHT[0x0]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [120:f] footer: [120:f]
+BST:PREV[0x3a70] NEXT[0x0] LEFT[0x0] RIGHT[0x2498]
+0x800004468: header: [1240:a] footer: [57280:f]
+0x800004940: header: [608:a] footer: [608:a]
+0x800004ba0: header: [1240:a] footer: [44904:f]
+0x800005078: header: [1240:a] footer: [45176:a]
+0x800005550: header: [2480:f] footer: [2480:f]
+BST:PREV[0x528] NEXT[0x1888] LEFT[0x0] RIGHT[0x25b8]
+0x800005f00: header: [1240:a] footer: [25320:f]
+0x8000063d8: header: [144:a] footer: [144:a]
+0x800006468: header: [144:a] footer: [144:a]
+0x8000064f8: header: [16:f] footer: [16:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800006508: EOL
+free block [0x800000ed8]:
+coalesce block [0x800000ed8]...
+insert node [0x800000ed8] to bst list...
+mm_malloc
+Heap (0x800000030):
+BST root (0x800000ed8)
+small list head (0x8000064f8) with size 16
+small list head (0x800000038) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:f] footer: [24:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:f] footer: [1240:f]
+BST:PREV[0xed8] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:f] footer: [1240:f]
+BST:PREV[0x0] NEXT[0x528] LEFT[0x3a70] RIGHT[0x5550]
+0x8000013b0: header: [1240:a] footer: [20488:a]
+0x800001888: header: [2480:f] footer: [2480:f]
+BST:PREV[0x5550] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800002238: header: [608:a] footer: [608:a]
+0x800002498: header: [144:f] footer: [144:f]
+BST:PREV[0x43f0] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800002528: header: [144:a] footer: [144:a]
+0x8000025b8: header: [2824:f] footer: [2824:f]
+BST:PREV[0x5550] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x8000030c0: header: [1240:a] footer: [6096:f]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [1216:f] footer: [1216:f]
+BST:PREV[0xed8] NEXT[0x0] LEFT[0x43f0] RIGHT[0x0]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [120:f] footer: [120:f]
+BST:PREV[0x3a70] NEXT[0x0] LEFT[0x0] RIGHT[0x2498]
+0x800004468: header: [1240:a] footer: [57280:f]
+0x800004940: header: [608:a] footer: [608:a]
+0x800004ba0: header: [1240:a] footer: [44904:f]
+0x800005078: header: [1240:a] footer: [45176:a]
+0x800005550: header: [2480:f] footer: [2480:f]
+BST:PREV[0xed8] NEXT[0x1888] LEFT[0x0] RIGHT[0x25b8]
+0x800005f00: header: [1240:a] footer: [25320:f]
+0x8000063d8: header: [144:a] footer: [144:a]
+0x800006468: header: [144:a] footer: [144:a]
+0x8000064f8: header: [16:f] footer: [16:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800006508: EOL
+do malloc with size [1234]...
+input size is [1234], actual size is [1240]
+remove node block [0x800000ed8] from bst list...
+place a block, split if necessary...
+mm_free
+Heap (0x800000030):
+BST root (0x800000528)
+small list head (0x8000064f8) with size 16
+small list head (0x800000038) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:f] footer: [24:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:f] footer: [1240:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x3a70] RIGHT[0x5550]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [32080:f]
+0x8000013b0: header: [1240:a] footer: [20488:a]
+0x800001888: header: [2480:f] footer: [2480:f]
+BST:PREV[0x5550] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800002238: header: [608:a] footer: [608:a]
+0x800002498: header: [144:f] footer: [144:f]
+BST:PREV[0x43f0] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800002528: header: [144:a] footer: [144:a]
+0x8000025b8: header: [2824:f] footer: [2824:f]
+BST:PREV[0x5550] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x8000030c0: header: [1240:a] footer: [6096:f]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [1216:f] footer: [1216:f]
+BST:PREV[0x528] NEXT[0x0] LEFT[0x43f0] RIGHT[0x0]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [120:f] footer: [120:f]
+BST:PREV[0x3a70] NEXT[0x0] LEFT[0x0] RIGHT[0x2498]
+0x800004468: header: [1240:a] footer: [57280:f]
+0x800004940: header: [608:a] footer: [608:a]
+0x800004ba0: header: [1240:a] footer: [44904:f]
+0x800005078: header: [1240:a] footer: [45176:a]
+0x800005550: header: [2480:f] footer: [2480:f]
+BST:PREV[0x528] NEXT[0x1888] LEFT[0x0] RIGHT[0x25b8]
+0x800005f00: header: [1240:a] footer: [25320:f]
+0x8000063d8: header: [144:a] footer: [144:a]
+0x800006468: header: [144:a] footer: [144:a]
+0x8000064f8: header: [16:f] footer: [16:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800006508: EOL
+free block [0x800004ba0]:
+coalesce block [0x800004ba0]...
+insert node [0x800004ba0] to bst list...
+mm_free
+Heap (0x800000030):
+BST root (0x800004ba0)
+small list head (0x8000064f8) with size 16
+small list head (0x800000038) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:f] footer: [24:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:f] footer: [1240:f]
+BST:PREV[0x4ba0] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [32080:f]
+0x8000013b0: header: [1240:a] footer: [20488:a]
+0x800001888: header: [2480:f] footer: [2480:f]
+BST:PREV[0x5550] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800002238: header: [608:a] footer: [608:a]
+0x800002498: header: [144:f] footer: [144:f]
+BST:PREV[0x43f0] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800002528: header: [144:a] footer: [144:a]
+0x8000025b8: header: [2824:f] footer: [2824:f]
+BST:PREV[0x5550] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x8000030c0: header: [1240:a] footer: [6096:f]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [1216:f] footer: [1216:f]
+BST:PREV[0x4ba0] NEXT[0x0] LEFT[0x43f0] RIGHT[0x0]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [120:f] footer: [120:f]
+BST:PREV[0x3a70] NEXT[0x0] LEFT[0x0] RIGHT[0x2498]
+0x800004468: header: [1240:a] footer: [57280:f]
+0x800004940: header: [608:a] footer: [608:a]
+0x800004ba0: header: [1240:f] footer: [1240:f]
+BST:PREV[0x0] NEXT[0x528] LEFT[0x3a70] RIGHT[0x5550]
+0x800005078: header: [1240:a] footer: [45176:a]
+0x800005550: header: [2480:f] footer: [2480:f]
+BST:PREV[0x4ba0] NEXT[0x1888] LEFT[0x0] RIGHT[0x25b8]
+0x800005f00: header: [1240:a] footer: [25320:f]
+0x8000063d8: header: [144:a] footer: [144:a]
+0x800006468: header: [144:a] footer: [144:a]
+0x8000064f8: header: [16:f] footer: [16:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800006508: EOL
+free block [0x800004468]:
+coalesce block [0x800004468]...
+remove node block [0x8000043f0] from bst list...
+insert node [0x8000043f0] to bst list...
+mm_malloc
+Heap (0x800000030):
+BST root (0x800004ba0)
+small list head (0x8000064f8) with size 16
+small list head (0x800000038) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:f] footer: [24:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:f] footer: [1240:f]
+BST:PREV[0x4ba0] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [32080:f]
+0x8000013b0: header: [1240:a] footer: [20488:a]
+0x800001888: header: [2480:f] footer: [2480:f]
+BST:PREV[0x5550] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800002238: header: [608:a] footer: [608:a]
+0x800002498: header: [144:f] footer: [144:f]
+BST:PREV[0x3a70] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800002528: header: [144:a] footer: [144:a]
+0x8000025b8: header: [2824:f] footer: [2824:f]
+BST:PREV[0x5550] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x8000030c0: header: [1240:a] footer: [6096:f]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [1216:f] footer: [1216:f]
+BST:PREV[0x4ba0] NEXT[0x0] LEFT[0x2498] RIGHT[0x0]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [1360:f] footer: [1360:f]
+BST:PREV[0x5550] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800004940: header: [608:a] footer: [608:a]
+0x800004ba0: header: [1240:f] footer: [1240:f]
+BST:PREV[0x0] NEXT[0x528] LEFT[0x3a70] RIGHT[0x5550]
+0x800005078: header: [1240:a] footer: [45176:a]
+0x800005550: header: [2480:f] footer: [2480:f]
+BST:PREV[0x4ba0] NEXT[0x1888] LEFT[0x43f0] RIGHT[0x25b8]
+0x800005f00: header: [1240:a] footer: [25320:f]
+0x8000063d8: header: [144:a] footer: [144:a]
+0x800006468: header: [144:a] footer: [144:a]
+0x8000064f8: header: [16:f] footer: [16:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800006508: EOL
+do malloc with size [1234]...
+input size is [1234], actual size is [1240]
+remove node block [0x800004ba0] from bst list...
+place a block, split if necessary...
+mm_free
+Heap (0x800000030):
+BST root (0x800000528)
+small list head (0x8000064f8) with size 16
+small list head (0x800000038) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:f] footer: [24:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:f] footer: [1240:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x3a70] RIGHT[0x5550]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [32080:f]
+0x8000013b0: header: [1240:a] footer: [20488:a]
+0x800001888: header: [2480:f] footer: [2480:f]
+BST:PREV[0x5550] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800002238: header: [608:a] footer: [608:a]
+0x800002498: header: [144:f] footer: [144:f]
+BST:PREV[0x3a70] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800002528: header: [144:a] footer: [144:a]
+0x8000025b8: header: [2824:f] footer: [2824:f]
+BST:PREV[0x5550] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x8000030c0: header: [1240:a] footer: [6096:f]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [1216:f] footer: [1216:f]
+BST:PREV[0x528] NEXT[0x0] LEFT[0x2498] RIGHT[0x0]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [1360:f] footer: [1360:f]
+BST:PREV[0x5550] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800004940: header: [608:a] footer: [608:a]
+0x800004ba0: header: [1240:a] footer: [3928:f]
+0x800005078: header: [1240:a] footer: [45176:a]
+0x800005550: header: [2480:f] footer: [2480:f]
+BST:PREV[0x528] NEXT[0x1888] LEFT[0x43f0] RIGHT[0x25b8]
+0x800005f00: header: [1240:a] footer: [25320:f]
+0x8000063d8: header: [144:a] footer: [144:a]
+0x800006468: header: [144:a] footer: [144:a]
+0x8000064f8: header: [16:f] footer: [16:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800006508: EOL
+free block [0x800006468]:
+coalesce block [0x800006468]...
+remove [0x8000064f8] with size 16 from small list
+[0x8000064f8] is the head
+insert node [0x800006468] to bst list...
+mm_malloc
+Heap (0x800000030):
+BST root (0x800000528)
+small list head ((nil)) with size 16
+small list head (0x800000038) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:f] footer: [24:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:f] footer: [1240:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x3a70] RIGHT[0x5550]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [32080:f]
+0x8000013b0: header: [1240:a] footer: [20488:a]
+0x800001888: header: [2480:f] footer: [2480:f]
+BST:PREV[0x5550] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800002238: header: [608:a] footer: [608:a]
+0x800002498: header: [144:f] footer: [144:f]
+BST:PREV[0x3a70] NEXT[0x0] LEFT[0x0] RIGHT[0x6468]
+0x800002528: header: [144:a] footer: [144:a]
+0x8000025b8: header: [2824:f] footer: [2824:f]
+BST:PREV[0x5550] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x8000030c0: header: [1240:a] footer: [6096:f]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [1216:f] footer: [1216:f]
+BST:PREV[0x528] NEXT[0x0] LEFT[0x2498] RIGHT[0x0]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [1360:f] footer: [1360:f]
+BST:PREV[0x5550] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800004940: header: [608:a] footer: [608:a]
+0x800004ba0: header: [1240:a] footer: [3928:f]
+0x800005078: header: [1240:a] footer: [45176:a]
+0x800005550: header: [2480:f] footer: [2480:f]
+BST:PREV[0x528] NEXT[0x1888] LEFT[0x43f0] RIGHT[0x25b8]
+0x800005f00: header: [1240:a] footer: [25320:f]
+0x8000063d8: header: [144:a] footer: [144:a]
+0x800006468: header: [160:f] footer: [160:f]
+BST:PREV[0x2498] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800006508: EOL
+do malloc with size [1234]...
+input size is [1234], actual size is [1240]
+remove node block [0x800000528] from bst list...
+newCurParent[0x800005550], newCurRight[0x800000000]small list head ((nil)) with size 16
+small list head (0x800000038) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+small list head (0x5550) with size 16
+small list head (0x800000038) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+place a block, split if necessary...
+mm_free
+Heap (0x800000030):
+BST root (0x8000043f0)
+small list head (0x5550) with size 16
+small list head (0x800000038) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:f] footer: [24:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:a] footer: [2592:a]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [32080:f]
+0x8000013b0: header: [1240:a] footer: [20488:a]
+0x800001888: header: [2480:f] footer: [2480:f]
+BST:PREV[0x5550] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800002238: header: [608:a] footer: [608:a]
+0x800002498: header: [144:f] footer: [144:f]
+BST:PREV[0x3a70] NEXT[0x0] LEFT[0x0] RIGHT[0x6468]
+0x800002528: header: [144:a] footer: [144:a]
+0x8000025b8: header: [2824:f] footer: [2824:f]
+BST:PREV[0x5550] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x8000030c0: header: [1240:a] footer: [6096:f]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [1216:f] footer: [1216:f]
+BST:PREV[0x43f0] NEXT[0x0] LEFT[0x2498] RIGHT[0x0]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [1360:f] footer: [1360:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x3a70] RIGHT[0x5550]
+0x800004940: header: [608:a] footer: [608:a]
+0x800004ba0: header: [1240:a] footer: [3928:f]
+0x800005078: header: [1240:a] footer: [45176:a]
+0x800005550: header: [2480:f] footer: [2480:f]
+BST:PREV[0x43f0] NEXT[0x1888] LEFT[0x0] RIGHT[0x25b8]
+0x800005f00: header: [1240:a] footer: [25320:f]
+0x8000063d8: header: [144:a] footer: [144:a]
+0x800006468: header: [160:f] footer: [160:f]
+BST:PREV[0x2498] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800006508: EOL
+free block [0x800005f00]:
+coalesce block [0x800005f00]...
+remove node block [0x800005550] from bst list...
+insert node [0x800005550] to bst list...
+mm_free
+Heap (0x800000030):
+BST root (0x8000043f0)
+small list head (0x5550) with size 16
+small list head (0x800000038) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:f] footer: [24:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:a] footer: [2592:a]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [32080:f]
+0x8000013b0: header: [1240:a] footer: [20488:a]
+0x800001888: header: [2480:f] footer: [2480:f]
+BST:PREV[0x43f0] NEXT[0x0] LEFT[0x0] RIGHT[0x25b8]
+0x800002238: header: [608:a] footer: [608:a]
+0x800002498: header: [144:f] footer: [144:f]
+BST:PREV[0x3a70] NEXT[0x0] LEFT[0x0] RIGHT[0x6468]
+0x800002528: header: [144:a] footer: [144:a]
+0x8000025b8: header: [2824:f] footer: [2824:f]
+BST:PREV[0x1888] NEXT[0x0] LEFT[0x0] RIGHT[0x5550]
+0x8000030c0: header: [1240:a] footer: [6096:f]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [1216:f] footer: [1216:f]
+BST:PREV[0x43f0] NEXT[0x0] LEFT[0x2498] RIGHT[0x0]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [1360:f] footer: [1360:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x3a70] RIGHT[0x1888]
+0x800004940: header: [608:a] footer: [608:a]
+0x800004ba0: header: [1240:a] footer: [3928:f]
+0x800005078: header: [1240:a] footer: [45176:a]
+0x800005550: header: [3720:f] footer: [3720:f]
+BST:PREV[0x25b8] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x8000063d8: header: [144:a] footer: [144:a]
+0x800006468: header: [160:f] footer: [160:f]
+BST:PREV[0x2498] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800006508: EOL
+free block [0x8000030c0]:
+coalesce block [0x8000030c0]...
+remove node block [0x8000025b8] from bst list...
+insert node [0x8000025b8] to bst list...
+mm_malloc
+Heap (0x800000030):
+BST root (0x8000043f0)
+small list head (0x5550) with size 16
+small list head (0x800000038) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:f] footer: [24:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:a] footer: [2592:a]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [32080:f]
+0x8000013b0: header: [1240:a] footer: [20488:a]
+0x800001888: header: [2480:f] footer: [2480:f]
+BST:PREV[0x43f0] NEXT[0x0] LEFT[0x0] RIGHT[0x5550]
+0x800002238: header: [608:a] footer: [608:a]
+0x800002498: header: [144:f] footer: [144:f]
+BST:PREV[0x3a70] NEXT[0x0] LEFT[0x0] RIGHT[0x6468]
+0x800002528: header: [144:a] footer: [144:a]
+0x8000025b8: header: [4064:f] footer: [4064:f]
+BST:PREV[0x5550] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [1216:f] footer: [1216:f]
+BST:PREV[0x43f0] NEXT[0x0] LEFT[0x2498] RIGHT[0x0]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [1360:f] footer: [1360:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x3a70] RIGHT[0x1888]
+0x800004940: header: [608:a] footer: [608:a]
+0x800004ba0: header: [1240:a] footer: [3928:f]
+0x800005078: header: [1240:a] footer: [45176:a]
+0x800005550: header: [3720:f] footer: [3720:f]
+BST:PREV[0x1888] NEXT[0x0] LEFT[0x0] RIGHT[0x25b8]
+0x8000063d8: header: [144:a] footer: [144:a]
+0x800006468: header: [160:f] footer: [160:f]
+BST:PREV[0x2498] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800006508: EOL
+do malloc with size [1234]...
+input size is [1234], actual size is [1240]
+remove node block [0x8000043f0] from bst list...
+place a block, split if necessary...
+insert node [0x8000048c8] to bst list...
+mm_malloc
+Heap (0x800000030):
+BST root (0x800001888)
+small list head (0x5550) with size 16
+small list head (0x800000038) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:f] footer: [24:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:a] footer: [2592:a]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [32080:f]
+0x8000013b0: header: [1240:a] footer: [20488:a]
+0x800001888: header: [2480:f] footer: [2480:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x3a70] RIGHT[0x5550]
+0x800002238: header: [608:a] footer: [608:a]
+0x800002498: header: [144:f] footer: [144:f]
+BST:PREV[0x3a70] NEXT[0x0] LEFT[0x48c8] RIGHT[0x6468]
+0x800002528: header: [144:a] footer: [144:a]
+0x8000025b8: header: [4064:f] footer: [4064:f]
+BST:PREV[0x5550] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [1216:f] footer: [1216:f]
+BST:PREV[0x1888] NEXT[0x0] LEFT[0x2498] RIGHT[0x0]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [1240:a] footer: [55624:f]
+0x8000048c8: header: [120:f] footer: [120:f]
+BST:PREV[0x2498] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800004940: header: [608:a] footer: [608:a]
+0x800004ba0: header: [1240:a] footer: [3928:f]
+0x800005078: header: [1240:a] footer: [45176:a]
+0x800005550: header: [3720:f] footer: [3720:f]
+BST:PREV[0x1888] NEXT[0x0] LEFT[0x0] RIGHT[0x25b8]
+0x8000063d8: header: [144:a] footer: [144:a]
+0x800006468: header: [160:f] footer: [160:f]
+BST:PREV[0x2498] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800006508: EOL
+do malloc with size [1234]...
+input size is [1234], actual size is [1240]
+remove node block [0x800001888] from bst list...
+place a block, split if necessary...
+insert node [0x800001d60] to bst list...
+mm_malloc
+Heap (0x800000030):
+BST root (0x800005550)
+small list head (0x5550) with size 16
+small list head (0x800000038) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:f] footer: [24:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:a] footer: [2592:a]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [32080:f]
+0x8000013b0: header: [1240:a] footer: [20488:a]
+0x800001888: header: [1240:a] footer: [64024:a]
+0x800001d60: header: [1240:f] footer: [1240:f]
+BST:PREV[0x3a70] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800002238: header: [608:a] footer: [608:a]
+0x800002498: header: [144:f] footer: [144:f]
+BST:PREV[0x3a70] NEXT[0x0] LEFT[0x48c8] RIGHT[0x6468]
+0x800002528: header: [144:a] footer: [144:a]
+0x8000025b8: header: [4064:f] footer: [4064:f]
+BST:PREV[0x5550] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [1216:f] footer: [1216:f]
+BST:PREV[0x5550] NEXT[0x0] LEFT[0x2498] RIGHT[0x1d60]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [1240:a] footer: [55624:f]
+0x8000048c8: header: [120:f] footer: [120:f]
+BST:PREV[0x2498] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800004940: header: [608:a] footer: [608:a]
+0x800004ba0: header: [1240:a] footer: [3928:f]
+0x800005078: header: [1240:a] footer: [45176:a]
+0x800005550: header: [3720:f] footer: [3720:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x3a70] RIGHT[0x25b8]
+0x8000063d8: header: [144:a] footer: [144:a]
+0x800006468: header: [160:f] footer: [160:f]
+BST:PREV[0x2498] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800006508: EOL
+do malloc with size [134]...
+input size is [134], actual size is [144]
+remove node block [0x800002498] from bst list...
+place a block, split if necessary...
+mm_malloc
+Heap (0x800000030):
+BST root (0x800005550)
+small list head (0x5550) with size 16
+small list head (0x800000038) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:f] footer: [24:f]
+SMALL LIST: PREV[0x0] NEXT[0x0]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:a] footer: [2592:a]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [32080:f]
+0x8000013b0: header: [1240:a] footer: [20488:a]
+0x800001888: header: [1240:a] footer: [64024:a]
+0x800001d60: header: [1240:f] footer: [1240:f]
+BST:PREV[0x3a70] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800002238: header: [608:a] footer: [608:a]
+0x800002498: header: [144:a] footer: [144:a]
+0x800002528: header: [144:a] footer: [144:a]
+0x8000025b8: header: [4064:f] footer: [4064:f]
+BST:PREV[0x5550] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [1216:f] footer: [1216:f]
+BST:PREV[0x5550] NEXT[0x0] LEFT[0x6468] RIGHT[0x1d60]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [1240:a] footer: [55624:f]
+0x8000048c8: header: [120:f] footer: [120:f]
+BST:PREV[0x6468] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800004940: header: [608:a] footer: [608:a]
+0x800004ba0: header: [1240:a] footer: [3928:f]
+0x800005078: header: [1240:a] footer: [45176:a]
+0x800005550: header: [3720:f] footer: [3720:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x3a70] RIGHT[0x25b8]
+0x8000063d8: header: [144:a] footer: [144:a]
+0x800006468: header: [160:f] footer: [160:f]
+BST:PREV[0x3a70] NEXT[0x0] LEFT[0x48c8] RIGHT[0x0]
+0x800006508: EOL
+do malloc with size [16]...
+input size is [16], actual size is [24]
+place a block, split if necessary...
+mm_malloc
+Heap (0x800000030):
+BST root (0x800005550)
+small list head (0x5550) with size 16
+small list head ((nil)) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:a] footer: [24:a]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:a] footer: [2592:a]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [32080:f]
+0x8000013b0: header: [1240:a] footer: [20488:a]
+0x800001888: header: [1240:a] footer: [64024:a]
+0x800001d60: header: [1240:f] footer: [1240:f]
+BST:PREV[0x3a70] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800002238: header: [608:a] footer: [608:a]
+0x800002498: header: [144:a] footer: [144:a]
+0x800002528: header: [144:a] footer: [144:a]
+0x8000025b8: header: [4064:f] footer: [4064:f]
+BST:PREV[0x5550] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [1216:f] footer: [1216:f]
+BST:PREV[0x5550] NEXT[0x0] LEFT[0x6468] RIGHT[0x1d60]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [1240:a] footer: [55624:f]
+0x8000048c8: header: [120:f] footer: [120:f]
+BST:PREV[0x6468] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800004940: header: [608:a] footer: [608:a]
+0x800004ba0: header: [1240:a] footer: [3928:f]
+0x800005078: header: [1240:a] footer: [45176:a]
+0x800005550: header: [3720:f] footer: [3720:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x3a70] RIGHT[0x25b8]
+0x8000063d8: header: [144:a] footer: [144:a]
+0x800006468: header: [160:f] footer: [160:f]
+BST:PREV[0x3a70] NEXT[0x0] LEFT[0x48c8] RIGHT[0x0]
+0x800006508: EOL
+do malloc with size [1234]...
+input size is [1234], actual size is [1240]
+remove node block [0x800001d60] from bst list...
+place a block, split if necessary...
+mm_malloc
+Heap (0x800000030):
+BST root (0x800005550)
+small list head (0x5550) with size 16
+small list head ((nil)) with size 24
+small list head ((nil)) with size 32
+small list head ((nil)) with size 40
+small list head ((nil)) with size 48
+0x800000030: header: [8:a] footer: [8:a]
+0x800000038: header: [24:a] footer: [24:a]
+0x800000050: header: [1240:a] footer: [25032:a]
+0x800000528: header: [1240:a] footer: [2592:a]
+0x800000a00: header: [1240:a] footer: [63016:a]
+0x800000ed8: header: [1240:a] footer: [32080:f]
+0x8000013b0: header: [1240:a] footer: [20488:a]
+0x800001888: header: [1240:a] footer: [64024:a]
+0x800001d60: header: [1240:a] footer: [63960:a]
+0x800002238: header: [608:a] footer: [608:a]
+0x800002498: header: [144:a] footer: [144:a]
+0x800002528: header: [144:a] footer: [144:a]
+0x8000025b8: header: [4064:f] footer: [4064:f]
+BST:PREV[0x5550] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800003598: header: [1240:a] footer: [43648:a]
+0x800003a70: header: [1216:f] footer: [1216:f]
+BST:PREV[0x5550] NEXT[0x0] LEFT[0x6468] RIGHT[0x0]
+0x800003f30: header: [608:a] footer: [608:a]
+0x800004190: header: [608:a] footer: [608:a]
+0x8000043f0: header: [1240:a] footer: [55624:f]
+0x8000048c8: header: [120:f] footer: [120:f]
+BST:PREV[0x6468] NEXT[0x0] LEFT[0x0] RIGHT[0x0]
+0x800004940: header: [608:a] footer: [608:a]
+0x800004ba0: header: [1240:a] footer: [3928:f]
+0x800005078: header: [1240:a] footer: [45176:a]
+0x800005550: header: [3720:f] footer: [3720:f]
+BST:PREV[0x0] NEXT[0x0] LEFT[0x3a70] RIGHT[0x25b8]
+0x8000063d8: header: [144:a] footer: [144:a]
+0x800006468: header: [160:f] footer: [160:f]
+BST:PREV[0x3a70] NEXT[0x0] LEFT[0x48c8] RIGHT[0x0]
+0x800006508: EOL
+do malloc with size [134]...
+input size is [134], actual size is [144]
+remove node block [0x800006468] from bst list...
+place a block, split if necessary...
+insert node [0x8000064f8] with size 16 to small list...
+index is 1...
+now head pointer is [0x5550]
